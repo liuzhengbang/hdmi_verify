@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.ncd
+OUTFILE=C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.bit
+FAMILY=Spartan6
+PART=xc6slx45-2fgg484
+WORKINGDIR=C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify
+LICENSE=WebPack
+USER_INFO=__0_0_0

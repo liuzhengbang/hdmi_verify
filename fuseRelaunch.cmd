@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb_isim_beh.exe" -prj "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb_beh.prj" "work.random_generator_tb" "work.glbl" 

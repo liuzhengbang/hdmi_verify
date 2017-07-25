@@ -1,0 +1,4 @@
+verilog isim_temp "image_gererator.v"
+verilog isim_temp "hdmi_driver.v"
+verilog isim_temp "hdmi_driver_tb.v"
+verilog isim_temp "C:/Program/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

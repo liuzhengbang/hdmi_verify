@@ -1,0 +1,441 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Program\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc hdmi_verify.ucf -p
+xc6slx45-fgg484-2 hdmi_verify.ngc hdmi_verify.ngd
+
+Reading NGO file "C:/Users/liuzh_000/Documents/GE/B
+Project/hdmi_verify/hdmi_verify.ngc" ...
+Loading design module "ipcore_dir/hdmi_in_fifo.ngc"...
+Loading design module "ipcore_dir/uart_protocol_fifo.ngc"...
+Loading design module "ipcore_dir/transmit_fifo.ngc"...
+Loading design module "ipcore_dir/pulse_tester_fifo.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "hdmi_verify.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:137 - Constraint <NET "clk_50m" TNM_NET =
+   "CLOCK_IN_50M";> [hdmi_verify.ucf(7)]: No appropriate instances for the TNM
+   constraint are driven by "clk_50m".
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CLOCK_IN_50M = PERIOD
+   "CLOCK_IN_50M" 50000 kHz;> [hdmi_verify.ucf(8)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'CLOCK_IN_50M'.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[0]" LOC = U6 |> [hdmi_verify.ucf(11)]' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[1]" LOC = V5 |> [hdmi_verify.ucf(12)]' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[2]" LOC = AA2 |> [hdmi_verify.ucf(13)]' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[3]" LOC = AB2 |> [hdmi_verify.ucf(14)]' could not be found and so
+   the Locate constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V21;> [hdmi_verify.ucf(15)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = N19;> [hdmi_verify.ucf(16)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = P20;> [hdmi_verify.ucf(17)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = M19;> [hdmi_verify.ucf(18)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = P19;> [hdmi_verify.ucf(19)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W22;> [hdmi_verify.ucf(20)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = K18;> [hdmi_verify.ucf(21)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W20;> [hdmi_verify.ucf(22)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = L17;> [hdmi_verify.ucf(23)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T20;> [hdmi_verify.ucf(24)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB19;> [hdmi_verify.ucf(25)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T19;> [hdmi_verify.ucf(26)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y19;> [hdmi_verify.ucf(27)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W13;> [hdmi_verify.ucf(28)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA14;> [hdmi_verify.ucf(29)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y17;> [hdmi_verify.ucf(30)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB14;> [hdmi_verify.ucf(31)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB17;> [hdmi_verify.ucf(32)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA18;> [hdmi_verify.ucf(33)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB18;> [hdmi_verify.ucf(34)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U14;> [hdmi_verify.ucf(35)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W18;> [hdmi_verify.ucf(36)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U13;> [hdmi_verify.ucf(37)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y18;> [hdmi_verify.ucf(38)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB16;> [hdmi_verify.ucf(44)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y16;> [hdmi_verify.ucf(45)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y14;> [hdmi_verify.ucf(46)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W15;> [hdmi_verify.ucf(47)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V13;> [hdmi_verify.ucf(48)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W14;> [hdmi_verify.ucf(49)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T11;> [hdmi_verify.ucf(50)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA16;> [hdmi_verify.ucf(51)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R11;> [hdmi_verify.ucf(52)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB15;> [hdmi_verify.ucf(53)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W12;> [hdmi_verify.ucf(54)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y15;> [hdmi_verify.ucf(55)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB10;> [hdmi_verify.ucf(56)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB12;> [hdmi_verify.ucf(57)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA10;> [hdmi_verify.ucf(58)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W11;> [hdmi_verify.ucf(59)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB9;> [hdmi_verify.ucf(60)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V11;> [hdmi_verify.ucf(61)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R9;> [hdmi_verify.ucf(62)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y9;> [hdmi_verify.ucf(63)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R8;> [hdmi_verify.ucf(64)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y10;> [hdmi_verify.ucf(65)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W9;> [hdmi_verify.ucf(66)]' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W10;> [hdmi_verify.ucf(67)]' could not be found and so the Locate
+   constraint will be removed.
+
+INFO:ConstraintSystem:178 - TNM 'CLOCK_IN_27M', used in period specification
+   'TS_CLOCK_IN_27M', was traced into DCM_SP instance pll_video_m0/dcm_sp_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_pll_video_m0_clkfx = PERIOD "pll_video_m0_clkfx"
+   TS_CLOCK_IN_27M * 5.5 HIGH 50%>
+
+WARNING:ConstraintSystem:191 - The TNM 'CLOCK_IN_50M', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_CLOCK_IN_50M'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_CLOCK_IN_50M = PERIOD "CLOCK_IN_50M" 50000 kHz;>
+   [hdmi_verify.ucf(8)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_CLOCK_IN_50M = PERIOD "CLOCK_IN_50M" 50000 kHz;>
+   [hdmi_verify.ucf(8)]
+
+WARNING:NgdBuild:1012 - The constraint <NET "led[0]" LOC = U6 |>
+   [hdmi_verify.ucf(11)] is overridden on the design object led<0> by the
+   constraint <NET "led<0>" LOC = U6;> [hdmi_verify.ucf(123)].
+WARNING:NgdBuild:1012 - The constraint <NET "led[1]" LOC = V5 |>
+   [hdmi_verify.ucf(12)] is overridden on the design object led<1> by the
+   constraint <NET "led<1>" LOC = V5;> [hdmi_verify.ucf(126)].
+WARNING:NgdBuild:1012 - The constraint <NET "led[2]" LOC = AA2 |>
+   [hdmi_verify.ucf(13)] is overridden on the design object led<2> by the
+   constraint <NET "led<2>" LOC = AA2;> [hdmi_verify.ucf(129)].
+WARNING:NgdBuild:1012 - The constraint <NET "led[3]" LOC = AB2 |>
+   [hdmi_verify.ucf(14)] is overridden on the design object led<3> by the
+   constraint <NET "led<3>" LOC = AB2;> [hdmi_verify.ucf(132)].
+WARNING:NgdBuild:1012 - The constraint <LOC = V21;> [hdmi_verify.ucf(15)] is
+   overridden on the design object hdmi_out_rgb_r<7> by the constraint <NET
+   "hdmi_out_rgb_r<7>" LOC = V21;> [hdmi_verify.ucf(100)].
+WARNING:NgdBuild:1012 - The constraint <LOC = N19;> [hdmi_verify.ucf(16)] is
+   overridden on the design object hdmi_out_rgb_r<6> by the constraint <NET
+   "hdmi_out_rgb_r<6>" LOC = N19;> [hdmi_verify.ucf(99)].
+WARNING:NgdBuild:1012 - The constraint <LOC = P20;> [hdmi_verify.ucf(17)] is
+   overridden on the design object hdmi_out_rgb_r<5> by the constraint <NET
+   "hdmi_out_rgb_r<5>" LOC = P20;> [hdmi_verify.ucf(98)].
+WARNING:NgdBuild:1012 - The constraint <LOC = M19;> [hdmi_verify.ucf(18)] is
+   overridden on the design object hdmi_out_rgb_r<4> by the constraint <NET
+   "hdmi_out_rgb_r<4>" LOC = M19;> [hdmi_verify.ucf(97)].
+WARNING:NgdBuild:1012 - The constraint <LOC = P19;> [hdmi_verify.ucf(19)] is
+   overridden on the design object hdmi_out_rgb_r<3> by the constraint <NET
+   "hdmi_out_rgb_r<3>" LOC = P19;> [hdmi_verify.ucf(96)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W22;> [hdmi_verify.ucf(20)] is
+   overridden on the design object hdmi_out_rgb_r<2> by the constraint <NET
+   "hdmi_out_rgb_r<2>" LOC = W22;> [hdmi_verify.ucf(94)].
+WARNING:NgdBuild:1012 - The constraint <LOC = K18;> [hdmi_verify.ucf(21)] is
+   overridden on the design object hdmi_out_rgb_r<1> by the constraint <NET
+   "hdmi_out_rgb_r<1>" LOC = K18;> [hdmi_verify.ucf(92)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W20;> [hdmi_verify.ucf(22)] is
+   overridden on the design object hdmi_out_rgb_r<0> by the constraint <NET
+   "hdmi_out_rgb_r<0>" LOC = W20;> [hdmi_verify.ucf(90)].
+WARNING:NgdBuild:1012 - The constraint <LOC = L17;> [hdmi_verify.ucf(23)] is
+   overridden on the design object hdmi_out_rgb_g<7> by the constraint <NET
+   "hdmi_out_rgb_g<7>" LOC = L17;> [hdmi_verify.ucf(95)].
+WARNING:NgdBuild:1012 - The constraint <LOC = T20;> [hdmi_verify.ucf(24)] is
+   overridden on the design object hdmi_out_rgb_g<6> by the constraint <NET
+   "hdmi_out_rgb_g<6>" LOC = T20;> [hdmi_verify.ucf(93)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB19;> [hdmi_verify.ucf(25)] is
+   overridden on the design object hdmi_out_rgb_g<5> by the constraint <NET
+   "hdmi_out_rgb_g<5>" LOC = AB19;> [hdmi_verify.ucf(91)].
+WARNING:NgdBuild:1012 - The constraint <LOC = T19;> [hdmi_verify.ucf(26)] is
+   overridden on the design object hdmi_out_rgb_g<4> by the constraint <NET
+   "hdmi_out_rgb_g<4>" LOC = T19;> [hdmi_verify.ucf(89)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y19;> [hdmi_verify.ucf(27)] is
+   overridden on the design object hdmi_out_rgb_g<3> by the constraint <NET
+   "hdmi_out_rgb_g<3>" LOC = Y19;> [hdmi_verify.ucf(88)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W13;> [hdmi_verify.ucf(28)] is
+   overridden on the design object hdmi_out_rgb_g<2> by the constraint <NET
+   "hdmi_out_rgb_g<2>" LOC = W13;> [hdmi_verify.ucf(87)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AA14;> [hdmi_verify.ucf(29)] is
+   overridden on the design object hdmi_out_rgb_g<1> by the constraint <NET
+   "hdmi_out_rgb_g<1>" LOC = AA14;> [hdmi_verify.ucf(86)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y17;> [hdmi_verify.ucf(30)] is
+   overridden on the design object hdmi_out_rgb_g<0> by the constraint <NET
+   "hdmi_out_rgb_g<0>" LOC = Y17;> [hdmi_verify.ucf(85)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB14;> [hdmi_verify.ucf(31)] is
+   overridden on the design object hdmi_out_rgb_b<7> by the constraint <NET
+   "hdmi_out_rgb_b<7>" LOC = AB14;> [hdmi_verify.ucf(84)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB17;> [hdmi_verify.ucf(32)] is
+   overridden on the design object hdmi_out_rgb_b<6> by the constraint <NET
+   "hdmi_out_rgb_b<6>" LOC = AB17;> [hdmi_verify.ucf(134)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AA18;> [hdmi_verify.ucf(33)] is
+   overridden on the design object hdmi_out_rgb_b<5> by the constraint <NET
+   "hdmi_out_rgb_b<5>" LOC = AA18;> [hdmi_verify.ucf(131)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB18;> [hdmi_verify.ucf(34)] is
+   overridden on the design object hdmi_out_rgb_b<4> by the constraint <NET
+   "hdmi_out_rgb_b<4>" LOC = AB18;> [hdmi_verify.ucf(128)].
+WARNING:NgdBuild:1012 - The constraint <LOC = U14;> [hdmi_verify.ucf(35)] is
+   overridden on the design object hdmi_out_rgb_b<3> by the constraint <NET
+   "hdmi_out_rgb_b<3>" LOC = U14;> [hdmi_verify.ucf(125)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W18;> [hdmi_verify.ucf(36)] is
+   overridden on the design object hdmi_out_rgb_b<2> by the constraint <NET
+   "hdmi_out_rgb_b<2>" LOC = W18;> [hdmi_verify.ucf(121)].
+WARNING:NgdBuild:1012 - The constraint <LOC = U13;> [hdmi_verify.ucf(37)] is
+   overridden on the design object hdmi_out_rgb_b<1> by the constraint <NET
+   "hdmi_out_rgb_b<1>" LOC = U13;> [hdmi_verify.ucf(118)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y18;> [hdmi_verify.ucf(38)] is
+   overridden on the design object hdmi_out_rgb_b<0> by the constraint <NET
+   "hdmi_out_rgb_b<0>" LOC = Y18;> [hdmi_verify.ucf(115)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB16;> [hdmi_verify.ucf(44)] is
+   overridden on the design object hdmi_in_R<7> by the constraint <NET
+   "hdmi_in_R<7>" LOC = AB16;> [hdmi_verify.ucf(83)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y16;> [hdmi_verify.ucf(45)] is
+   overridden on the design object hdmi_in_R<6> by the constraint <NET
+   "hdmi_in_R<6>" LOC = Y16;> [hdmi_verify.ucf(133)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y14;> [hdmi_verify.ucf(46)] is
+   overridden on the design object hdmi_in_R<5> by the constraint <NET
+   "hdmi_in_R<5>" LOC = Y14;> [hdmi_verify.ucf(130)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W15;> [hdmi_verify.ucf(47)] is
+   overridden on the design object hdmi_in_R<4> by the constraint <NET
+   "hdmi_in_R<4>" LOC = W15;> [hdmi_verify.ucf(127)].
+WARNING:NgdBuild:1012 - The constraint <LOC = V13;> [hdmi_verify.ucf(48)] is
+   overridden on the design object hdmi_in_R<3> by the constraint <NET
+   "hdmi_in_R<3>" LOC = V13;> [hdmi_verify.ucf(124)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W14;> [hdmi_verify.ucf(49)] is
+   overridden on the design object hdmi_in_R<2> by the constraint <NET
+   "hdmi_in_R<2>" LOC = W14;> [hdmi_verify.ucf(120)].
+WARNING:NgdBuild:1012 - The constraint <LOC = T11;> [hdmi_verify.ucf(50)] is
+   overridden on the design object hdmi_in_R<1> by the constraint <NET
+   "hdmi_in_R<1>" LOC = T11;> [hdmi_verify.ucf(117)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AA16;> [hdmi_verify.ucf(51)] is
+   overridden on the design object hdmi_in_R<0> by the constraint <NET
+   "hdmi_in_R<0>" LOC = AA16;> [hdmi_verify.ucf(114)].
+WARNING:NgdBuild:1012 - The constraint <LOC = R11;> [hdmi_verify.ucf(52)] is
+   overridden on the design object hdmi_in_G<7> by the constraint <NET
+   "hdmi_in_G<7>" LOC = R11;> [hdmi_verify.ucf(122)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB15;> [hdmi_verify.ucf(53)] is
+   overridden on the design object hdmi_in_G<6> by the constraint <NET
+   "hdmi_in_G<6>" LOC = AB15;> [hdmi_verify.ucf(119)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W12;> [hdmi_verify.ucf(54)] is
+   overridden on the design object hdmi_in_G<5> by the constraint <NET
+   "hdmi_in_G<5>" LOC = W12;> [hdmi_verify.ucf(116)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y15;> [hdmi_verify.ucf(55)] is
+   overridden on the design object hdmi_in_G<4> by the constraint <NET
+   "hdmi_in_G<4>" LOC = Y15;> [hdmi_verify.ucf(113)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB10;> [hdmi_verify.ucf(56)] is
+   overridden on the design object hdmi_in_G<3> by the constraint <NET
+   "hdmi_in_G<3>" LOC = AB10;> [hdmi_verify.ucf(112)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB12;> [hdmi_verify.ucf(57)] is
+   overridden on the design object hdmi_in_G<2> by the constraint <NET
+   "hdmi_in_G<2>" LOC = AB12;> [hdmi_verify.ucf(111)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AA10;> [hdmi_verify.ucf(58)] is
+   overridden on the design object hdmi_in_G<1> by the constraint <NET
+   "hdmi_in_G<1>" LOC = AA10;> [hdmi_verify.ucf(110)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W11;> [hdmi_verify.ucf(59)] is
+   overridden on the design object hdmi_in_G<0> by the constraint <NET
+   "hdmi_in_G<0>" LOC = W11;> [hdmi_verify.ucf(109)].
+WARNING:NgdBuild:1012 - The constraint <LOC = AB9;> [hdmi_verify.ucf(60)] is
+   overridden on the design object hdmi_in_B<7> by the constraint <NET
+   "hdmi_in_B<7>" LOC = AB9;> [hdmi_verify.ucf(108)].
+WARNING:NgdBuild:1012 - The constraint <LOC = V11;> [hdmi_verify.ucf(61)] is
+   overridden on the design object hdmi_in_B<6> by the constraint <NET
+   "hdmi_in_B<6>" LOC = V11;> [hdmi_verify.ucf(107)].
+WARNING:NgdBuild:1012 - The constraint <LOC = R9;> [hdmi_verify.ucf(62)] is
+   overridden on the design object hdmi_in_B<5> by the constraint <NET
+   "hdmi_in_B<5>" LOC = R9;> [hdmi_verify.ucf(106)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y9;> [hdmi_verify.ucf(63)] is
+   overridden on the design object hdmi_in_B<4> by the constraint <NET
+   "hdmi_in_B<4>" LOC = Y9;> [hdmi_verify.ucf(105)].
+WARNING:NgdBuild:1012 - The constraint <LOC = R8;> [hdmi_verify.ucf(64)] is
+   overridden on the design object hdmi_in_B<3> by the constraint <NET
+   "hdmi_in_B<3>" LOC = R8;> [hdmi_verify.ucf(104)].
+WARNING:NgdBuild:1012 - The constraint <LOC = Y10;> [hdmi_verify.ucf(65)] is
+   overridden on the design object hdmi_in_B<2> by the constraint <NET
+   "hdmi_in_B<2>" LOC = Y10;> [hdmi_verify.ucf(103)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W9;> [hdmi_verify.ucf(66)] is
+   overridden on the design object hdmi_in_B<1> by the constraint <NET
+   "hdmi_in_B<1>" LOC = W9;> [hdmi_verify.ucf(102)].
+WARNING:NgdBuild:1012 - The constraint <LOC = W10;> [hdmi_verify.ucf(67)] is
+   overridden on the design object hdmi_in_B<0> by the constraint <NET
+   "hdmi_in_B<0>" LOC = W10;> [hdmi_verify.ucf(101)].
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (37.037000)
+   was detected for the CLKIN_PERIOD attribute on DCM
+   "pll_video_m0/dcm_sp_inst".  This does not match the PERIOD constraint value
+   (27000 KHz.).  The uncertainty calculation will use the non-default attribute
+   value.  This could result in incorrect uncertainty calculated for DCM output
+   clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 109
+
+Total memory usage is 169456 kilobytes
+
+Writing NGD file "hdmi_verify.ngd" ...
+Total REAL time to NGDBUILD completion:  6 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "hdmi_verify.bld"...

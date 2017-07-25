@@ -1,0 +1,1373 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: hdmi_verify.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "hdmi_verify.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "hdmi_verify"
+Output Format                      : NGC
+Target Device                      : xc6slx45-2-fgg484
+
+---- Source Options
+Top Module Name                    : hdmi_verify
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pll_controller.v" into library work
+Parsing module <pll_controller>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart.v" into library work
+Parsing module <uart>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\transmit_fifo.v" into library work
+Parsing module <transmit_fifo>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_interface.v" into library work
+Parsing module <uart_interface>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\random_generator.v" into library work
+Parsing module <random_generator>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\uart_protocol_fifo.v" into library work
+Parsing module <uart_protocol_fifo>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pulse_tester_fifo.v" into library work
+Parsing module <pulse_tester_fifo>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\hdmi_in_fifo.v" into library work
+Parsing module <hdmi_in_fifo>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_utility.v" into library work
+Parsing module <uart_utility>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\pulse_tester.v" into library work
+Parsing module <pulse_tester>.
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\pulse_tester.v" Line 61: Redeclaration of ansi port pulse_tester_rd_en is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\pulse_tester.v" Line 62: Redeclaration of ansi port pulse_tester_data_not_available is not allowed
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\image_gererator.v" into library work
+Parsing module <image_gererator>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in.v" into library work
+Parsing module <hdmi_in>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" into library work
+Parsing module <hdmi_in_reader>.
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" Line 86: Redeclaration of ansi port in_precess is not allowed
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" into library work
+Parsing module <hdmi_driver>.
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 71: Redeclaration of ansi port hs_reg is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 72: Redeclaration of ansi port vs_reg is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 73: Redeclaration of ansi port hs_reg_d0 is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 74: Redeclaration of ansi port vs_reg_d0 is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 75: Redeclaration of ansi port h_cnt is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 76: Redeclaration of ansi port v_cnt is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 77: Redeclaration of ansi port active_x is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 78: Redeclaration of ansi port active_y is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 79: Redeclaration of ansi port rgb_r_reg is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 80: Redeclaration of ansi port rgb_g_reg is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 81: Redeclaration of ansi port rgb_b_reg is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 82: Redeclaration of ansi port h_active is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 83: Redeclaration of ansi port v_active is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 84: Redeclaration of ansi port time_count is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 85: Redeclaration of ansi port video_active is not allowed
+WARNING:HDLCompiler:751 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v" Line 86: Redeclaration of ansi port video_active_d0 is not allowed
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\clock_out.v" into library work
+Parsing module <clock_out>.
+Analyzing Verilog file "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" into library work
+Parsing module <hdmi_verify>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" Line 142: Port hs_reg is not connected to this instance
+
+Elaborating module <hdmi_verify>.
+
+Elaborating module <pll_controller>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <DCM_SP(CLKDV_DIVIDE=2.0,CLKFX_DIVIDE=2,CLKFX_MULTIPLY=11,CLKIN_DIVIDE_BY_2="FALSE",CLKIN_PERIOD=37.037,CLKOUT_PHASE_SHIFT="NONE",CLK_FEEDBACK="1X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pll_controller.v" Line 126: Assignment to locked_int ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pll_controller.v" Line 127: Assignment to status_int ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <clock_out>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="ASYNC")>.
+
+Elaborating module <hdmi_driver>.
+
+Elaborating module <image_gererator>.
+
+Elaborating module <hdmi_in_reader>.
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" Line 108: Assignment to first_frame ignored, since the identifier is never used
+
+Elaborating module <uart_utility>.
+
+Elaborating module <uart_protocol_fifo>.
+WARNING:HDLCompiler:1499 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\uart_protocol_fifo.v" Line 39: Empty module <uart_protocol_fifo> remains a black box.
+
+Elaborating module <uart_interface>.
+
+Elaborating module <transmit_fifo>.
+WARNING:HDLCompiler:1499 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\transmit_fifo.v" Line 39: Empty module <transmit_fifo> remains a black box.
+
+Elaborating module <uart>.
+
+Elaborating module <pulse_tester>.
+
+Elaborating module <random_generator>.
+
+Elaborating module <pulse_tester_fifo>.
+WARNING:HDLCompiler:1499 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pulse_tester_fifo.v" Line 39: Empty module <pulse_tester_fifo> remains a black box.
+
+Elaborating module <hdmi_in>.
+
+Elaborating module <hdmi_in_fifo>.
+WARNING:HDLCompiler:1499 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\hdmi_in_fifo.v" Line 39: Empty module <hdmi_in_fifo> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" Line 333: Assignment to fifo_empty ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" Line 169: Assignment to fifo_full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" Line 171: Assignment to frame_c ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <hdmi_verify>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v".
+WARNING:Xst:647 - Input <clk_50m> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <h_cnt> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <v_cnt> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <active_x> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <active_y> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <rgb_r_reg> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <rgb_g_reg> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <rgb_b_reg> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <hs_reg> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <vs_reg> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <hs_reg_d0> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <vs_reg_d0> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <h_active> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <v_active> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <video_active> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 142: Output port <video_active_d0> of the instance <hdmi_driver> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 154: Output port <frame_count> of the instance <hdmi_in_reader> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 154: Output port <fifo_full> of the instance <hdmi_in_reader> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_verify.v" line 154: Output port <error_detected> of the instance <hdmi_in_reader> is unconnected or connected to loadless signal.
+    Found 24-bit register for signal <time_count>.
+    Found 4-bit register for signal <led>.
+    Found 24-bit adder for signal <time_count[23]_GND_1_o_add_15_OUT> created at line 111.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+Unit <hdmi_verify> synthesized.
+
+Synthesizing Unit <pll_controller>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\ipcore_dir\pll_controller.v".
+    Summary:
+	no macro.
+Unit <pll_controller> synthesized.
+
+Synthesizing Unit <clock_out>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\clock_out.v".
+    Summary:
+	no macro.
+Unit <clock_out> synthesized.
+
+Synthesizing Unit <hdmi_driver>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_driver.v".
+        H_ACTIVE = 12'b011110000000
+        H_FP = 12'b000001011000
+        H_SYNC = 12'b000000101100
+        H_BP = 12'b000010010100
+        V_ACTIVE = 12'b010000111000
+        V_FP = 12'b000000000100
+        V_SYNC = 12'b000000000101
+        V_BP = 12'b000000100100
+        H_TOTAL = 12'b100010011000
+        V_TOTAL = 12'b010001100101
+    Found 1-bit register for signal <vs_reg_d0>.
+    Found 1-bit register for signal <video_active_d0>.
+    Found 8-bit register for signal <frame_count>.
+    Found 12-bit register for signal <h_cnt>.
+    Found 1-bit register for signal <hs_reg>.
+    Found 1-bit register for signal <h_active>.
+    Found 12-bit register for signal <active_x>.
+    Found 12-bit register for signal <v_cnt>.
+    Found 1-bit register for signal <vs_reg>.
+    Found 1-bit register for signal <v_active>.
+    Found 12-bit register for signal <active_y>.
+    Found 8-bit register for signal <rgb_r_reg>.
+    Found 8-bit register for signal <rgb_g_reg>.
+    Found 8-bit register for signal <rgb_b_reg>.
+    Found 12-bit register for signal <step_count>.
+    Found 8-bit register for signal <sel_count>.
+    Found 4-bit register for signal <sel>.
+    Found 1-bit register for signal <hs_reg_d0>.
+    Found 12-bit subtractor for signal <h_cnt[11]_GND_8_o_sub_18_OUT> created at line 167.
+    Found 12-bit subtractor for signal <v_cnt[11]_GND_8_o_sub_37_OUT> created at line 218.
+    Found 8-bit adder for signal <frame_count[7]_GND_8_o_add_5_OUT> created at line 124.
+    Found 12-bit adder for signal <h_cnt[11]_GND_8_o_add_9_OUT> created at line 135.
+    Found 12-bit adder for signal <v_cnt[11]_GND_8_o_add_22_OUT> created at line 183.
+    Found 12-bit adder for signal <step_count[11]_GND_8_o_add_47_OUT> created at line 248.
+    Found 8-bit adder for signal <sel_count[7]_GND_8_o_add_48_OUT> created at line 249.
+    Found 4-bit adder for signal <sel[3]_GND_8_o_add_56_OUT> created at line 262.
+    Found 12-bit comparator greater for signal <n0026> created at line 166
+    Found 12-bit comparator lessequal for signal <n0049> created at line 217
+    Summary:
+	inferred   8 Adder/Subtractor(s).
+	inferred 111 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <hdmi_driver> synthesized.
+
+Synthesizing Unit <image_gererator>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\image_gererator.v".
+        WHITE_R = 8'b11111111
+        WHITE_G = 8'b11111111
+        WHITE_B = 8'b11111111
+        YELLOW_R = 8'b11111111
+        YELLOW_G = 8'b11111111
+        YELLOW_B = 8'b00000000
+        CYAN_R = 8'b00000000
+        CYAN_G = 8'b11111111
+        CYAN_B = 8'b11111111
+        GREEN_R = 8'b00000000
+        GREEN_G = 8'b11111111
+        GREEN_B = 8'b00000000
+        MAGENTA_R = 8'b11111111
+        MAGENTA_G = 8'b00000000
+        MAGENTA_B = 8'b11111111
+        RED_R = 8'b11111111
+        RED_G = 8'b00000000
+        RED_B = 8'b00000000
+        BLUE_R = 8'b00000000
+        BLUE_G = 8'b00000000
+        BLUE_B = 8'b11111111
+        BLACK_R = 8'b00000000
+        BLACK_G = 8'b00000000
+        BLACK_B = 8'b00000000
+        H_TOTAL = 12'b011110000000
+        V_TOTAL = 12'b010000111000
+    Found 2-bit adder for signal <n0113> created at line 77.
+    Found 8-bit adder for signal <h_active_value[7]_step_count[7]_add_19_OUT> created at line 129.
+    Found 8-bit adder for signal <v_active_value[7]_step_count[7]_add_20_OUT> created at line 130.
+    Found 8-bit adder for signal <h_active_value[11]_step_count[7]_add_21_OUT> created at line 131.
+    Found 8-bit 6-to-1 multiplexer for signal <_n0143> created at line 74.
+    Found 8-bit 7-to-1 multiplexer for signal <_n0154> created at line 74.
+    Found 8-bit 6-to-1 multiplexer for signal <_n0165> created at line 74.
+    Found 12-bit comparator greater for signal <h_active_value[11]_GND_9_o_LessThan_67_o> created at line 190
+    Found 12-bit comparator greater for signal <h_active_value[11]_GND_9_o_LessThan_68_o> created at line 194
+    Found 12-bit comparator greater for signal <h_active_value[11]_GND_9_o_LessThan_69_o> created at line 198
+    Found 12-bit comparator greater for signal <v_active_value[11]_GND_9_o_LessThan_70_o> created at line 210
+    Found 12-bit comparator greater for signal <v_active_value[11]_GND_9_o_LessThan_71_o> created at line 214
+    Found 12-bit comparator greater for signal <v_active_value[11]_GND_9_o_LessThan_72_o> created at line 218
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+	inferred  33 Multiplexer(s).
+Unit <image_gererator> synthesized.
+
+Synthesizing Unit <hdmi_in_reader>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v".
+        PULSE_DATA_IDLE = 2'b00
+        PULSE_DATA_FIFO = 2'b01
+        PULSE_DATA_TRANSMIT = 2'b10
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" line 164: Output port <byte_from_uart> of the instance <uart_utility_m1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" line 164: Output port <rx_data_available> of the instance <uart_utility_m1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in_reader.v" line 316: Output port <fifo_empty> of the instance <hdmi_in> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <frame_count> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <error_detected> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <data_avaiable_4_verify_d0>.
+    Found 8-bit register for signal <red_d0>.
+    Found 8-bit register for signal <green_d0>.
+    Found 8-bit register for signal <blue_d0>.
+    Found 8-bit register for signal <generated_r_reg>.
+    Found 8-bit register for signal <generated_g_reg>.
+    Found 8-bit register for signal <generated_b_reg>.
+    Found 12-bit register for signal <h_active_value_d0>.
+    Found 12-bit register for signal <v_active_value_d0>.
+    Found 1-bit register for signal <data_avaiable_4_verify_d1>.
+    Found 8-bit register for signal <red>.
+    Found 8-bit register for signal <green>.
+    Found 8-bit register for signal <blue>.
+    Found 12-bit register for signal <h_active_value>.
+    Found 12-bit register for signal <v_active_value>.
+    Found 1-bit register for signal <pulse_data_transmitted>.
+    Found 8-bit register for signal <transmit_frame_count>.
+    Found 1-bit register for signal <start_tx>.
+    Found 8-bit register for signal <frame_count_should_be>.
+    Found 8-bit register for signal <error_count>.
+    Found 64-bit register for signal <data_to_uart>.
+    Found 4-bit register for signal <sel>.
+    Found 12-bit register for signal <transmit_step_count>.
+    Found 1-bit register for signal <waiting_for_stable>.
+    Found 1-bit register for signal <in_precess>.
+    Found 2-bit register for signal <pulse_data_state>.
+    Found 1-bit register for signal <pulse_tester_rd_en>.
+    Found 57-bit register for signal <pulse_tester_data_received>.
+    Found finite state machine <FSM_0> for signal <pulse_data_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit subtractor for signal <time_count[23]_red_d0[7]_sub_1_OUT> created at line 106.
+    Found 24-bit subtractor for signal <hdmi_delay> created at line 106.
+    Found 8-bit subtractor for signal <generated_r_reg[7]_red_d0[7]_sub_46_OUT> created at line 211.
+    Found 8-bit subtractor for signal <generated_g_reg[7]_green_d0[7]_sub_47_OUT> created at line 211.
+    Found 8-bit subtractor for signal <generated_b_reg[7]_blue_d0[7]_sub_48_OUT> created at line 211.
+    Found 8-bit adder for signal <blue_d0[7]_GND_10_o_add_28_OUT> created at line 187.
+    Found 8-bit adder for signal <frame_count_should_be[7]_GND_10_o_add_30_OUT> created at line 193.
+    Found 8-bit adder for signal <error_count[7]_GND_10_o_add_44_OUT> created at line 210.
+    Found 8-bit comparator equal for signal <n0025> created at line 185
+    Found 8-bit comparator equal for signal <generated_r_reg[7]_red_d0[7]_equal_42_o> created at line 206
+    Found 8-bit comparator equal for signal <generated_g_reg[7]_green_d0[7]_equal_43_o> created at line 206
+    Found 8-bit comparator equal for signal <generated_b_reg[7]_blue_d0[7]_equal_44_o> created at line 206
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred 288 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <hdmi_in_reader> synthesized.
+
+Synthesizing Unit <uart_utility>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_utility.v".
+        PROTOCOL_IDLE = 2'b00
+        PROTOCOL_RD_FIFO = 2'b01
+        PROTOCOL_TRANSMIT = 2'b10
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_utility.v" line 110: Output port <full> of the instance <uart_protocol_fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_utility.v" line 122: Output port <error_fifo_full> of the instance <m0> is unconnected or connected to loadless signal.
+    Found 4-bit register for signal <tx_counter>.
+    Found 8-bit register for signal <byte_to_uart>.
+    Found 2-bit register for signal <protocol_state>.
+    Found 1-bit register for signal <protocol_fifo_rd_en>.
+    Found 64-bit register for signal <data_waiting_transmit>.
+    Found 1-bit register for signal <tx_data_enable>.
+    Found finite state machine <FSM_1> for signal <protocol_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit subtractor for signal <tx_counter[3]_GND_11_o_sub_6_OUT> created at line 77.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_utility> synthesized.
+
+Synthesizing Unit <uart_interface>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_interface.v".
+        TRANS_IDLE = 2'b00
+        TRANS_RD_FIFO = 2'b01
+        TRANS_PREPARE_TRANSMIT = 2'b10
+        TRANS_TRANSMIT = 2'b11
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart_interface.v" line 122: Output port <is_receiving> of the instance <uart_m> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <uart_tx_enable>.
+    Found 8-bit register for signal <uart_tx_byte>.
+    Found 2-bit register for signal <trans_state>.
+    Found 1-bit register for signal <tx_fifo_rd_en>.
+    Found 8-bit register for signal <byte_waiting_transmit>.
+    Found finite state machine <FSM_2> for signal <trans_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_interface> synthesized.
+
+Synthesizing Unit <uart>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\uart.v".
+        CLOCK_DIVIDE = 12'b111100011011
+        RX_IDLE = 3'b000
+        RX_CHECK_START = 3'b001
+        RX_READ_BITS = 3'b010
+        RX_CHECK_STOP = 3'b011
+        RX_DELAY_RESTART = 3'b100
+        RX_ERROR = 3'b101
+        RX_RECEIVED = 3'b110
+        TX_IDLE = 2'b00
+        TX_SENDING = 2'b01
+        TX_END_SENDING = 2'b10
+    Found 13-bit register for signal <rx_clk_divider>.
+    Found 6-bit register for signal <rx_countdown>.
+    Found 8-bit register for signal <rx_byte>.
+    Found 4-bit register for signal <rx_bits_remaining>.
+    Found 2-bit register for signal <tx_state>.
+    Found 13-bit register for signal <tx_clk_divider>.
+    Found 6-bit register for signal <tx_countdown>.
+    Found 4-bit register for signal <tx_bits_remaining>.
+    Found 1-bit register for signal <tx_out>.
+    Found 8-bit register for signal <tx_data>.
+    Found 3-bit register for signal <recv_state>.
+    Found finite state machine <FSM_3> for signal <tx_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <recv_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 13-bit subtractor for signal <rx_clk_divider[12]_GND_15_o_sub_4_OUT> created at line 77.
+    Found 6-bit subtractor for signal <rx_countdown[5]_GND_15_o_sub_6_OUT> created at line 80.
+    Found 4-bit subtractor for signal <rx_bits_remaining[3]_GND_15_o_sub_20_OUT> created at line 112.
+    Found 13-bit subtractor for signal <tx_clk_divider[12]_GND_15_o_sub_44_OUT> created at line 137.
+    Found 6-bit subtractor for signal <tx_countdown[5]_GND_15_o_sub_46_OUT> created at line 140.
+    Found 4-bit subtractor for signal <tx_bits_remaining[3]_GND_15_o_sub_56_OUT> created at line 158.
+    Found 6-bit 3-to-1 multiplexer for signal <tx_state[1]_tx_countdown[5]_mux_76_OUT> created at line 143.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  63 D-type flip-flop(s).
+	inferred  24 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <uart> synthesized.
+
+Synthesizing Unit <pulse_tester>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\pulse_tester.v".
+        PULSE_OUT_IDLE = 3'b000
+        PULSE_OUT_WAITING = 3'b001
+        PULSE_OUT_IN_PROCESS = 3'b010
+        PULSE_OUT_ENDING = 3'b011
+        PULSE_IN_IDLE = 3'b000
+        PULSE_IN_WAITING = 3'b001
+        PULSE_IN_IN_PROCESS = 3'b010
+        PULSE_IN_ENDING = 3'b011
+        PULSE_IN_ERROR = 3'b100
+INFO:Xst:3210 - "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\pulse_tester.v" line 207: Output port <full> of the instance <pulse_tester_fifo> is unconnected or connected to loadless signal.
+    Found 30-bit register for signal <pulse_countdown>.
+    Found 32-bit register for signal <delay_counter>.
+    Found 1-bit register for signal <pulse_output>.
+    Found 3-bit register for signal <pulse_out_state>.
+    Found 30-bit register for signal <pulse_width>.
+    Found 1-bit register for signal <pulse_input_d0>.
+    Found 1-bit register for signal <pulse_input_d1>.
+    Found 1-bit register for signal <pulse_input_d2>.
+    Found 1-bit register for signal <pulse_input_d3>.
+    Found 1-bit register for signal <pulse_input_d4>.
+    Found 1-bit register for signal <pulse_input_d5>.
+    Found 1-bit register for signal <pulse_input_d6>.
+    Found 1-bit register for signal <pulse_input_d7>.
+    Found 1-bit register for signal <pulse_input_d8>.
+    Found 1-bit register for signal <pulse_input_d9>.
+    Found 1-bit register for signal <pulse_input_d10>.
+    Found 1-bit register for signal <pulse_input_d11>.
+    Found 1-bit register for signal <pulse_input_d12>.
+    Found 1-bit register for signal <pulse_input_d13>.
+    Found 1-bit register for signal <pulse_input_d14>.
+    Found 1-bit register for signal <pulse_input_d15>.
+    Found 1-bit register for signal <pulse_input_d16>.
+    Found 1-bit register for signal <pulse_input_d17>.
+    Found 1-bit register for signal <pulse_input_d18>.
+    Found 1-bit register for signal <pulse_input_d19>.
+    Found 32-bit register for signal <pulse_in_countdown>.
+    Found 1-bit register for signal <fifo_wr_en>.
+    Found 3-bit register for signal <pulse_in_state>.
+    Found 30-bit register for signal <full_pulse_variance>.
+    Found 32-bit register for signal <pulse_delay>.
+    Found 57-bit register for signal <fifo_din>.
+    Found 1-bit register for signal <load>.
+    Found 1-bit register for signal <start_pulse_in>.
+    Found finite state machine <FSM_5> for signal <pulse_out_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_6> for signal <pulse_in_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 68                                             |
+    | Inputs             | 23                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 30-bit subtractor for signal <pulse_countdown[29]_GND_16_o_sub_2_OUT> created at line 81.
+    Found 32-bit subtractor for signal <pulse_in_countdown[31]_GND_16_o_sub_34_OUT> created at line 144.
+    Found 30-bit subtractor for signal <full_pulse_variance[29]_GND_16_o_sub_43_OUT> created at line 175.
+    Found 32-bit subtractor for signal <pulse_delay[31]_GND_16_o_sub_45_OUT> created at line 183.
+    Found 32-bit adder for signal <delay_counter[31]_GND_16_o_add_2_OUT> created at line 82.
+    Found 24-bit adder for signal <full_pulse_variance[23]_GND_16_o_add_45_OUT> created at line 183.
+    Found 30-bit 3-to-1 multiplexer for signal <pulse_out_state[2]_pulse_countdown[29]_mux_26_OUT> created at line 80.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 267 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <pulse_tester> synthesized.
+
+Synthesizing Unit <random_generator>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\random_generator.v".
+    Found 12-bit register for signal <rand_num>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <random_generator> synthesized.
+
+Synthesizing Unit <hdmi_in>.
+    Related source file is "C:\Users\liuzh_000\Documents\GE\B Project\hdmi_verify\hdmi_in.v".
+        H_TOTAL = 12'b011110000000
+        V_TOTAL = 12'b010000111000
+    Found 1-bit register for signal <hdmi_in_vs_d0>.
+    Found 8-bit register for signal <hdmi_in_R_d0>.
+    Found 8-bit register for signal <hdmi_in_G_d0>.
+    Found 8-bit register for signal <hdmi_in_B_d0>.
+    Found 1-bit register for signal <hdmi_in_active_d0>.
+    Found 1-bit register for signal <hdmi_in_hs_d1>.
+    Found 1-bit register for signal <hdmi_in_vs_d1>.
+    Found 8-bit register for signal <hdmi_in_R_d1>.
+    Found 8-bit register for signal <hdmi_in_G_d1>.
+    Found 8-bit register for signal <hdmi_in_B_d1>.
+    Found 1-bit register for signal <hdmi_in_active_d1>.
+    Found 12-bit register for signal <h_active_value>.
+    Found 12-bit register for signal <v_active_value>.
+    Found 72-bit register for signal <hdmi_in_data>.
+    Found 1-bit register for signal <hdmi_in_data_available>.
+    Found 1-bit register for signal <hdmi_in_hs_d0>.
+    Found 12-bit adder for signal <h_active_value[11]_GND_19_o_add_13_OUT> created at line 106.
+    Found 12-bit adder for signal <v_active_value[11]_GND_19_o_add_18_OUT> created at line 122.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 151 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <hdmi_in> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 39
+ 12-bit adder                                          : 5
+ 12-bit subtractor                                     : 2
+ 13-bit subtractor                                     : 2
+ 2-bit adder                                           : 2
+ 24-bit adder                                          : 2
+ 24-bit subtractor                                     : 2
+ 30-bit subtractor                                     : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 2
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 3
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 10
+ 8-bit subtractor                                      : 3
+# Registers                                            : 111
+ 1-bit register                                        : 50
+ 12-bit register                                       : 13
+ 13-bit register                                       : 2
+ 24-bit register                                       : 2
+ 30-bit register                                       : 3
+ 32-bit register                                       : 3
+ 4-bit register                                        : 6
+ 57-bit register                                       : 2
+ 6-bit register                                        : 2
+ 64-bit register                                       : 2
+ 72-bit register                                       : 1
+ 8-bit register                                        : 25
+# Comparators                                          : 18
+ 12-bit comparator greater                             : 13
+ 12-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 4
+# Multiplexers                                         : 116
+ 1-bit 2-to-1 multiplexer                              : 15
+ 12-bit 2-to-1 multiplexer                             : 2
+ 13-bit 2-to-1 multiplexer                             : 6
+ 30-bit 2-to-1 multiplexer                             : 3
+ 30-bit 3-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 57-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 12
+ 6-bit 3-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 62
+ 8-bit 6-to-1 multiplexer                              : 4
+ 8-bit 7-to-1 multiplexer                              : 2
+# FSMs                                                 : 7
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/hdmi_in_fifo.ngc>.
+Reading core <ipcore_dir/uart_protocol_fifo.ngc>.
+Reading core <ipcore_dir/transmit_fifo.ngc>.
+Reading core <ipcore_dir/pulse_tester_fifo.ngc>.
+Loading core <hdmi_in_fifo> for timing and area information for instance <hdmi_in_fifo>.
+Loading core <uart_protocol_fifo> for timing and area information for instance <uart_protocol_fifo>.
+Loading core <transmit_fifo> for timing and area information for instance <transmit_fifo>.
+Loading core <pulse_tester_fifo> for timing and area information for instance <pulse_tester_fifo>.
+INFO:Xst:2261 - The FF/Latch <pulse_width_0> in Unit <pulse_tester> is equivalent to the following 21 FFs/Latches, which will be removed : <pulse_width_1> <pulse_width_2> <pulse_width_3> <pulse_width_4> <pulse_width_5> <pulse_width_6> <pulse_width_7> <pulse_width_8> <pulse_width_9> <pulse_width_10> <pulse_width_11> <pulse_width_12> <pulse_width_13> <pulse_width_14> <pulse_width_15> <pulse_width_16> <pulse_width_17> <pulse_width_18> <pulse_width_19> <pulse_width_20> <pulse_width_21> 
+WARNING:Xst:1710 - FF/Latch <pulse_width_0> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <hdmi_driver>.
+The following registers are absorbed into counter <h_cnt>: 1 register on signal <h_cnt>.
+The following registers are absorbed into counter <frame_count>: 1 register on signal <frame_count>.
+The following registers are absorbed into counter <step_count>: 1 register on signal <step_count>.
+The following registers are absorbed into counter <sel_count>: 1 register on signal <sel_count>.
+The following registers are absorbed into counter <sel>: 1 register on signal <sel>.
+The following registers are absorbed into counter <v_cnt>: 1 register on signal <v_cnt>.
+Unit <hdmi_driver> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hdmi_in>.
+The following registers are absorbed into counter <h_active_value>: 1 register on signal <h_active_value>.
+The following registers are absorbed into counter <v_active_value>: 1 register on signal <v_active_value>.
+Unit <hdmi_in> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hdmi_in_reader>.
+The following registers are absorbed into counter <error_count>: 1 register on signal <error_count>.
+Unit <hdmi_in_reader> synthesized (advanced).
+
+Synthesizing (advanced) Unit <hdmi_verify>.
+The following registers are absorbed into counter <time_count>: 1 register on signal <time_count>.
+Unit <hdmi_verify> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pulse_tester>.
+The following registers are absorbed into counter <delay_counter>: 1 register on signal <delay_counter>.
+The following registers are absorbed into counter <pulse_in_countdown>: 1 register on signal <pulse_in_countdown>.
+The following registers are absorbed into counter <full_pulse_variance>: 1 register on signal <full_pulse_variance>.
+Unit <pulse_tester> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart>.
+The following registers are absorbed into counter <rx_bits_remaining>: 1 register on signal <rx_bits_remaining>.
+The following registers are absorbed into counter <tx_bits_remaining>: 1 register on signal <tx_bits_remaining>.
+Unit <uart> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_utility>.
+The following registers are absorbed into counter <tx_counter>: 1 register on signal <tx_counter>.
+Unit <uart_utility> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 23
+ 12-bit subtractor                                     : 2
+ 13-bit subtractor                                     : 2
+ 2-bit adder                                           : 2
+ 24-bit adder                                          : 1
+ 24-bit subtractor                                     : 2
+ 30-bit subtractor                                     : 1
+ 32-bit subtractor                                     : 1
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 7
+ 8-bit subtractor                                      : 3
+# Counters                                             : 16
+ 12-bit up counter                                     : 5
+ 24-bit up counter                                     : 1
+ 30-bit down counter                                   : 1
+ 32-bit down counter                                   : 1
+ 32-bit up counter                                     : 1
+ 4-bit down counter                                    : 3
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 3
+# Registers                                            : 798
+ Flip-Flops                                            : 798
+# Comparators                                          : 18
+ 12-bit comparator greater                             : 13
+ 12-bit comparator lessequal                           : 1
+ 8-bit comparator equal                                : 4
+# Multiplexers                                         : 122
+ 1-bit 2-to-1 multiplexer                              : 27
+ 13-bit 2-to-1 multiplexer                             : 6
+ 30-bit 2-to-1 multiplexer                             : 2
+ 30-bit 3-to-1 multiplexer                             : 1
+ 57-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 12
+ 6-bit 3-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 62
+ 8-bit 6-to-1 multiplexer                              : 4
+ 8-bit 7-to-1 multiplexer                              : 2
+# FSMs                                                 : 7
+# Xors                                                 : 7
+ 1-bit xor2                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <pulse_width_21> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_20> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_19> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_18> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_17> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_16> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_15> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_14> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_13> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_12> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_11> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_10> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_9> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_8> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_7> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_6> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_5> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_4> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_3> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_2> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_1> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pulse_width_0> (without init value) has a constant value of 1 in block <pulse_tester>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <led_0> in Unit <hdmi_verify> is equivalent to the following FF/Latch, which will be removed : <led_1> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/FSM_0> on signal <pulse_data_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/uart_utility_m1/FSM_1> on signal <protocol_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/uart_utility_m1/m0/FSM_2> on signal <trans_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 11    | 11
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/uart_utility_m1/m0/uart_m/FSM_3> on signal <tx_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/uart_utility_m1/m0/uart_m/FSM_4> on signal <recv_state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 110   | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/pulse_tester/FSM_6> on signal <pulse_in_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 11
+ 011   | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <hdmi_in_reader/pulse_tester/FSM_5> on signal <pulse_out_state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 00
+ 001   | 01
+ 010   | 11
+ 011   | 10
+-------------------
+INFO:Xst:2146 - In block <hdmi_driver>, Counter <step_count> <sel_count> <frame_count> are equivalent, XST will keep only <step_count>.
+WARNING:Xst:1710 - FF/Latch <data_to_uart_58> (without init value) has a constant value of 0 in block <hdmi_in_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_uart_59> (without init value) has a constant value of 0 in block <hdmi_in_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_uart_61> (without init value) has a constant value of 0 in block <hdmi_in_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_uart_62> (without init value) has a constant value of 0 in block <hdmi_in_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_to_uart_63> (without init value) has a constant value of 0 in block <hdmi_in_reader>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pulse_width_24> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <pulse_width_25> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <pulse_width_26> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <pulse_width_27> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <pulse_width_28> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <pulse_width_29> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_24> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_25> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_26> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_27> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_28> of sequential type is unconnected in block <pulse_tester>.
+WARNING:Xst:2677 - Node <full_pulse_variance_29> of sequential type is unconnected in block <pulse_tester>.
+
+Optimizing unit <hdmi_verify> ...
+
+Optimizing unit <hdmi_in_reader> ...
+
+Optimizing unit <hdmi_in> ...
+
+Optimizing unit <uart_utility> ...
+
+Optimizing unit <uart_interface> ...
+
+Optimizing unit <uart> ...
+
+Optimizing unit <pulse_tester> ...
+
+Optimizing unit <random_generator> ...
+
+Optimizing unit <image_gererator> ...
+
+Optimizing unit <hdmi_driver> ...
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_bits_remaining_3> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_bits_remaining_2> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_bits_remaining_1> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_bits_remaining_0> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/recv_state_FSM_FFd1> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/recv_state_FSM_FFd2> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/recv_state_FSM_FFd3> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_5> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_4> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_3> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_2> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_1> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_countdown_0> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_12> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_11> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_10> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_9> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_8> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_7> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_6> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_5> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_4> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_3> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_2> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_1> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_clk_divider_0> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_7> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_6> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_5> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_4> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_3> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_2> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_1> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:2677 - Node <hdmi_in_reader/uart_utility_m1/m0/uart_m/rx_byte_0> of sequential type is unconnected in block <hdmi_verify>.
+WARNING:Xst:1293 - FF/Latch <hdmi_in_reader/uart_utility_m1/m0/uart_m/tx_clk_divider_12> has a constant value of 0 in block <hdmi_verify>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <time_count_0> in Unit <hdmi_verify> is equivalent to the following FF/Latch, which will be removed : <hdmi_driver/h_cnt_0> 
+INFO:Xst:2261 - The FF/Latch <time_count_1> in Unit <hdmi_verify> is equivalent to the following FF/Latch, which will be removed : <hdmi_driver/h_cnt_1> 
+INFO:Xst:2261 - The FF/Latch <time_count_2> in Unit <hdmi_verify> is equivalent to the following FF/Latch, which will be removed : <hdmi_driver/h_cnt_2> 
+INFO:Xst:3203 - The FF/Latch <hdmi_in_reader/frame_count_should_be_0> in Unit <hdmi_verify> is the opposite to the following FF/Latch, which will be removed : <hdmi_in_reader/transmit_frame_count_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block hdmi_verify, actual ratio is 8.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 7 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_3> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_4> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_5> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_6> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_7> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d1_0_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_1_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_1_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_2_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 7 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_3> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_4> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_5> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_6> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_7> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_7_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_7_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_8_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_4_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0> in Unit <hdmi_in_reader/hdmi_in/hdmi_in_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_0_2> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/uart_utility_m1/uart_protocol_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/uart_utility_m1/m0/transmit_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <hdmi_in_reader/pulse_tester/pulse_tester_fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+FlipFlop hdmi_driver/active_x_0 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <hdmi_verify> :
+	Found 2-bit shift register for signal <hdmi_in_reader/data_avaiable_4_verify_d1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_active_d1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_7>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_6>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_5>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_4>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_3>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_2>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_B_d1_0>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_7>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_6>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_5>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_4>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_3>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_2>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_G_d1_0>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_7>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_6>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_5>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_4>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_3>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_2>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_R_d1_0>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_vs_d1>.
+	Found 2-bit shift register for signal <hdmi_in_reader/hdmi_in/hdmi_in_hs_d1>.
+Unit <hdmi_verify> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 881
+ Flip-Flops                                            : 881
+# Shift Registers                                      : 28
+ 2-bit shift register                                  : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : hdmi_verify.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2899
+#      GND                         : 8
+#      INV                         : 215
+#      LUT1                        : 159
+#      LUT2                        : 284
+#      LUT3                        : 112
+#      LUT4                        : 188
+#      LUT5                        : 187
+#      LUT6                        : 635
+#      MUXCY                       : 464
+#      MUXF7                       : 167
+#      MUXF8                       : 72
+#      VCC                         : 5
+#      XORCY                       : 403
+# FlipFlops/Latches                : 1310
+#      FD                          : 248
+#      FDC                         : 85
+#      FDCE                        : 263
+#      FDE                         : 470
+#      FDP                         : 51
+#      FDPE                        : 9
+#      FDR                         : 52
+#      FDRE                        : 95
+#      FDS                         : 32
+#      FDSE                        : 4
+#      ODDR2                       : 1
+# RAMS                             : 394
+#      RAM64M                      : 384
+#      RAMB16BWER                  : 9
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 28
+#      SRLC16E                     : 28
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 63
+#      IBUF                        : 28
+#      IBUFG                       : 1
+#      OBUF                        : 34
+# DCMs                             : 1
+#      DCM_SP                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1309  out of  54576     2%  
+ Number of Slice LUTs:                 3344  out of  27288    12%  
+    Number used as Logic:              1780  out of  27288     6%  
+    Number used as Memory:             1564  out of   6408    24%  
+       Number used as RAM:             1536
+       Number used as SRL:               28
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4159
+   Number with an unused Flip Flop:    2850  out of   4159    68%  
+   Number with an unused LUT:           815  out of   4159    19%  
+   Number of fully used LUT-FF pairs:   494  out of   4159    11%  
+   Number of unique control sets:        95
+
+IO Utilization: 
+ Number of IOs:                          66
+ Number of bonded IOBs:                  64  out of    316    20%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               10  out of    116     8%  
+    Number using Block RAM only:         10
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_27m                            | DCM_SP:CLKFX           | 1132  |
+hdmi_in_clk                        | BUFGP                  | 601   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 40.530ns (Maximum Frequency: 24.673MHz)
+   Minimum input arrival time before clock: 7.332ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_27m'
+  Clock period: 40.530ns (frequency: 24.673MHz)
+  Total number of paths / destination ports: 45745 / 2667
+-------------------------------------------------------------------------
+Delay:               7.369ns (Levels of Logic = 5)
+  Source:            hdmi_in_reader/v_active_value_7 (FF)
+  Destination:       hdmi_in_reader/generated_r_reg_6 (FF)
+  Source Clock:      clk_27m rising 5.5X
+  Destination Clock: clk_27m rising 5.5X
+
+  Data Path: hdmi_in_reader/v_active_value_7 to hdmi_in_reader/generated_r_reg_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.525   1.306  hdmi_in_reader/v_active_value_7 (hdmi_in_reader/v_active_value_7)
+     LUT5:I0->O            5   0.254   0.841  hdmi_in_reader/image_gererator_m0/h_active_value[11]_v_active_value[11]_AND_14_o11 (hdmi_in_reader/image_gererator_m0/h_active_value[11]_v_active_value[11]_AND_14_o1)
+     LUT6:I5->O           16   0.254   1.182  hdmi_in_reader/image_gererator_m0/v_active_value[11]_GND_9_o_equal_29_o<11>2 (hdmi_in_reader/image_gererator_m0/v_active_value[11]_GND_9_o_equal_29_o)
+     LUT3:I2->O           19   0.254   1.261  hdmi_in_reader/image_gererator_m0/h_active_value[11]_v_active_value[11]_AND_16_o1 (hdmi_in_reader/image_gererator_m0/h_active_value[11]_v_active_value[11]_AND_16_o)
+     LUT6:I5->O            7   0.254   0.910  hdmi_in_reader/image_gererator_m0/Mmux_red1011 (hdmi_in_reader/image_gererator_m0/Mmux_red101)
+     LUT6:I5->O            1   0.254   0.000  hdmi_in_reader/image_gererator_m0/Mmux_red2 (hdmi_in_reader/generated_r<0>)
+     FD:D                      0.074          hdmi_in_reader/generated_r_reg_0
+    ----------------------------------------
+    Total                      7.369ns (1.869ns logic, 5.500ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hdmi_in_clk'
+  Clock period: 4.410ns (frequency: 226.757MHz)
+  Total number of paths / destination ports: 6765 / 4222
+-------------------------------------------------------------------------
+Delay:               4.410ns (Levels of Logic = 2)
+  Source:            hdmi_in_reader/hdmi_in/h_active_value_5 (FF)
+  Destination:       hdmi_in_reader/hdmi_in/v_active_value_11 (FF)
+  Source Clock:      hdmi_in_clk rising
+  Destination Clock: hdmi_in_clk rising
+
+  Data Path: hdmi_in_reader/hdmi_in/h_active_value_5 to hdmi_in_reader/hdmi_in/v_active_value_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   1.221  hdmi_in_reader/hdmi_in/h_active_value_5 (hdmi_in_reader/hdmi_in/h_active_value_5)
+     LUT6:I0->O            1   0.254   0.790  hdmi_in_reader/hdmi_in/h_active_value[11]_GND_19_o_equal_18_o<11>1 (hdmi_in_reader/hdmi_in/h_active_value[11]_GND_19_o_equal_18_o<11>)
+     LUT2:I0->O           12   0.250   1.068  hdmi_in_reader/hdmi_in/h_active_value[11]_GND_19_o_equal_18_o<11>3 (hdmi_in_reader/hdmi_in/h_active_value[11]_GND_19_o_equal_18_o)
+     FDRE:CE                   0.302          hdmi_in_reader/hdmi_in/v_active_value_0
+    ----------------------------------------
+    Total                      4.410ns (1.331ns logic, 3.079ns route)
+                                       (30.2% logic, 69.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_27m'
+  Total number of paths / destination ports: 95 / 94
+-------------------------------------------------------------------------
+Offset:              7.332ns (Levels of Logic = 4)
+  Source:            pulse_input (PAD)
+  Destination:       hdmi_in_reader/pulse_tester/fifo_din_56 (FF)
+  Destination Clock: clk_27m rising 5.5X
+
+  Data Path: pulse_input to hdmi_in_reader/pulse_tester/fifo_din_56
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   1.259  pulse_input_IBUF (pulse_input_IBUF)
+     LUT6:I0->O            1   0.254   0.910  hdmi_in_reader/pulse_tester/pulse_in_state_FSM_FFd2-In2115_SW0 (N248)
+     LUT6:I3->O            4   0.235   0.912  hdmi_in_reader/pulse_tester/pulse_in_state_FSM_FFd2-In2115 (hdmi_in_reader/pulse_tester/pulse_in_state_FSM_FFd2-In21)
+     LUT4:I2->O           58   0.250   1.882  hdmi_in_reader/pulse_tester/_n0347_inv1 (hdmi_in_reader/pulse_tester/_n0347_inv)
+     FDE:CE                    0.302          hdmi_in_reader/pulse_tester/fifo_din_0
+    ----------------------------------------
+    Total                      7.332ns (2.369ns logic, 4.963ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'hdmi_in_clk'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              2.009ns (Levels of Logic = 1)
+  Source:            hdmi_in_active (PAD)
+  Destination:       hdmi_in_reader/hdmi_in/Mshreg_hdmi_in_active_d1 (FF)
+  Destination Clock: hdmi_in_clk rising
+
+  Data Path: hdmi_in_active to hdmi_in_reader/hdmi_in/Mshreg_hdmi_in_active_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  hdmi_in_active_IBUF (hdmi_in_active_IBUF)
+     SRLC16E:D                -0.060          hdmi_in_reader/hdmi_in/Mshreg_hdmi_in_active_d1
+    ----------------------------------------
+    Total                      2.009ns (1.328ns logic, 0.681ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_27m'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            hdmi_in_reader/pulse_tester/pulse_output (FF)
+  Destination:       pulse_ouput (PAD)
+  Source Clock:      clk_27m rising 5.5X
+
+  Data Path: hdmi_in_reader/pulse_tester/pulse_output to pulse_ouput
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.765  hdmi_in_reader/pulse_tester/pulse_output (hdmi_in_reader/pulse_tester/pulse_output)
+     OBUF:I->O                 2.912          pulse_ouput_OBUF (pulse_ouput)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_27m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_27m        |    7.369|         |         |         |
+hdmi_in_clk    |    2.923|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock hdmi_in_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_27m        |    1.667|         |         |         |
+hdmi_in_clk    |    4.410|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.48 secs
+ 
+--> 
+
+Total memory usage is 260516 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  108 (   0 filtered)
+Number of infos    :   87 (   0 filtered)
+

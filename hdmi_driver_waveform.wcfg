@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/hdmi_driver_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="hdmi_driver_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/hdmi_driver_tb/hs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hs</obj_property>
+      <obj_property name="ObjectShortName">hs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/vs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vs</obj_property>
+      <obj_property name="ObjectShortName">vs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/de" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">de</obj_property>
+      <obj_property name="ObjectShortName">de</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/hs_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hs_reg</obj_property>
+      <obj_property name="ObjectShortName">hs_reg</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/hs_reg_d0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hs_reg_d0</obj_property>
+      <obj_property name="ObjectShortName">hs_reg_d0</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/h_cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h_cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">h_cnt[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/active_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">active_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">active_x[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/vs_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vs_reg</obj_property>
+      <obj_property name="ObjectShortName">vs_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/vs_reg_d0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vs_reg_d0</obj_property>
+      <obj_property name="ObjectShortName">vs_reg_d0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/v_cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">v_cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">v_cnt[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/active_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">active_y[11:0]</obj_property>
+      <obj_property name="ObjectShortName">active_y[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_r[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_g" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_g[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_b[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_r_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_r_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_r_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_g_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_g_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_g_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rgb_b_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rgb_b_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_b_reg[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_driver_tb/time_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">time_count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">time_count[15:0]</obj_property>
+   </wvobject>
+</wave_config>

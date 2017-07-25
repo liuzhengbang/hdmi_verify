@@ -1,0 +1,23 @@
+
+
+
+// Instantiate the module
+hdmi_in instance_name (
+    .clk(clk), 
+    .hdmi_in_clk(hdmi_in_clk), 
+    .rst(rst), 
+    .hdmi_in_R(hdmi_in_R), 
+    .hdmi_in_G(hdmi_in_G), 
+    .hdmi_in_B(hdmi_in_B), 
+    .hdmi_in_active(hdmi_in_active), 
+    .hdmi_in_hs(hdmi_in_hs), 
+    .hdmi_in_vs(hdmi_in_vs), 
+    .time_count(time_count), 
+    .read_enable(read_enable), 
+    .data_from_hdmi(data_from_hdmi), 
+    .fifo_full(fifo_full), 
+    .fifo_empty(fifo_empty), 
+    .fifo_valid(fifo_valid)
+    );
+
+

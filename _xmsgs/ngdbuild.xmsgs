@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="137" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;clk_50m&quot; TNM_NET = &quot;CLOCK_IN_50M&quot;;&gt; [hdmi_verify.ucf(7)]</arg>: No appropriate instances for the TNM constraint are driven by &quot;<arg fmt="%s" index="2">clk_50m</arg>&quot;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_CLOCK_IN_50M = PERIOD &quot;CLOCK_IN_50M&quot; 50000 kHz;&gt; [hdmi_verify.ucf(8)]</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos; or &apos;TimeGrp&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">CLOCK_IN_50M</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;led[0]&quot; LOC = U6 |&gt; [hdmi_verify.ucf(11)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;led[1]&quot; LOC = V5 |&gt; [hdmi_verify.ucf(12)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;led[2]&quot; LOC = AA2 |&gt; [hdmi_verify.ucf(13)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;led[3]&quot; LOC = AB2 |&gt; [hdmi_verify.ucf(14)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = V21;&gt; [hdmi_verify.ucf(15)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = N19;&gt; [hdmi_verify.ucf(16)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = P20;&gt; [hdmi_verify.ucf(17)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = M19;&gt; [hdmi_verify.ucf(18)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = P19;&gt; [hdmi_verify.ucf(19)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W22;&gt; [hdmi_verify.ucf(20)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = K18;&gt; [hdmi_verify.ucf(21)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W20;&gt; [hdmi_verify.ucf(22)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = L17;&gt; [hdmi_verify.ucf(23)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = T20;&gt; [hdmi_verify.ucf(24)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB19;&gt; [hdmi_verify.ucf(25)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = T19;&gt; [hdmi_verify.ucf(26)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y19;&gt; [hdmi_verify.ucf(27)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W13;&gt; [hdmi_verify.ucf(28)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AA14;&gt; [hdmi_verify.ucf(29)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y17;&gt; [hdmi_verify.ucf(30)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB14;&gt; [hdmi_verify.ucf(31)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB17;&gt; [hdmi_verify.ucf(32)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AA18;&gt; [hdmi_verify.ucf(33)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB18;&gt; [hdmi_verify.ucf(34)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = U14;&gt; [hdmi_verify.ucf(35)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W18;&gt; [hdmi_verify.ucf(36)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = U13;&gt; [hdmi_verify.ucf(37)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y18;&gt; [hdmi_verify.ucf(38)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB16;&gt; [hdmi_verify.ucf(44)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y16;&gt; [hdmi_verify.ucf(45)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y14;&gt; [hdmi_verify.ucf(46)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W15;&gt; [hdmi_verify.ucf(47)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = V13;&gt; [hdmi_verify.ucf(48)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W14;&gt; [hdmi_verify.ucf(49)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = T11;&gt; [hdmi_verify.ucf(50)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AA16;&gt; [hdmi_verify.ucf(51)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = R11;&gt; [hdmi_verify.ucf(52)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB15;&gt; [hdmi_verify.ucf(53)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W12;&gt; [hdmi_verify.ucf(54)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y15;&gt; [hdmi_verify.ucf(55)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB10;&gt; [hdmi_verify.ucf(56)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB12;&gt; [hdmi_verify.ucf(57)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AA10;&gt; [hdmi_verify.ucf(58)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W11;&gt; [hdmi_verify.ucf(59)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = AB9;&gt; [hdmi_verify.ucf(60)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = V11;&gt; [hdmi_verify.ucf(61)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = R9;&gt; [hdmi_verify.ucf(62)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y9;&gt; [hdmi_verify.ucf(63)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = R8;&gt; [hdmi_verify.ucf(64)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = Y10;&gt; [hdmi_verify.ucf(65)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W9;&gt; [hdmi_verify.ucf(66)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;LOC = W10;&gt; [hdmi_verify.ucf(67)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CLOCK_IN_27M</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_CLOCK_IN_27M</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">pll_video_m0/dcm_sp_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_pll_video_m0_clkfx = PERIOD &quot;pll_video_m0_clkfx&quot; TS_CLOCK_IN_27M * 5.5 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="191" delta="old" >The <arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">CLOCK_IN_50M</arg>&apos;, does not directly or indirectly drive any flip-flops, latches and/or RAMS and cannot be actively used by the referencing <arg fmt="%s" index="3">Period</arg> constraint &apos;<arg fmt="%s" index="4">TS_CLOCK_IN_50M</arg>&apos;. If clock manager blocks are directly or indirectly driven, a new TNM constraint will not be derived even though the referencing constraint is a PERIOD constraint unless an output of the clock manager drives flip-flops, latches or RAMs. This TNM is used in the following user PERIOD specification:
+<arg fmt="%s" index="5">&lt;TIMESPEC TS_CLOCK_IN_50M = PERIOD &quot;CLOCK_IN_50M&quot; 50000 kHz;&gt; [hdmi_verify.ucf(8)]
+</arg></msg>
+
+<msg type="warning" file="ConstraintSystem" num="197" delta="old" >The following specification is invalid because the referenced TNM constraint was removed:
+<arg fmt="%s" index="1">&lt;TIMESPEC TS_CLOCK_IN_50M = PERIOD &quot;CLOCK_IN_50M&quot; 50000 kHz;&gt; [hdmi_verify.ucf(8)]</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;led[0]&quot; LOC = U6 |&gt; [hdmi_verify.ucf(11)]</arg> is overridden on the design object <arg fmt="%s" index="2">led&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;led&lt;0&gt;&quot; LOC = U6;&gt; [hdmi_verify.ucf(123)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;led[1]&quot; LOC = V5 |&gt; [hdmi_verify.ucf(12)]</arg> is overridden on the design object <arg fmt="%s" index="2">led&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;led&lt;1&gt;&quot; LOC = V5;&gt; [hdmi_verify.ucf(126)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;led[2]&quot; LOC = AA2 |&gt; [hdmi_verify.ucf(13)]</arg> is overridden on the design object <arg fmt="%s" index="2">led&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;led&lt;2&gt;&quot; LOC = AA2;&gt; [hdmi_verify.ucf(129)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;led[3]&quot; LOC = AB2 |&gt; [hdmi_verify.ucf(14)]</arg> is overridden on the design object <arg fmt="%s" index="2">led&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;led&lt;3&gt;&quot; LOC = AB2;&gt; [hdmi_verify.ucf(132)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = V21;&gt; [hdmi_verify.ucf(15)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;7&gt;&quot; LOC = V21;&gt; [hdmi_verify.ucf(100)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = N19;&gt; [hdmi_verify.ucf(16)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;6&gt;&quot; LOC = N19;&gt; [hdmi_verify.ucf(99)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = P20;&gt; [hdmi_verify.ucf(17)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;5&gt;&quot; LOC = P20;&gt; [hdmi_verify.ucf(98)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = M19;&gt; [hdmi_verify.ucf(18)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;4&gt;&quot; LOC = M19;&gt; [hdmi_verify.ucf(97)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = P19;&gt; [hdmi_verify.ucf(19)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;3&gt;&quot; LOC = P19;&gt; [hdmi_verify.ucf(96)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W22;&gt; [hdmi_verify.ucf(20)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;2&gt;&quot; LOC = W22;&gt; [hdmi_verify.ucf(94)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = K18;&gt; [hdmi_verify.ucf(21)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;1&gt;&quot; LOC = K18;&gt; [hdmi_verify.ucf(92)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W20;&gt; [hdmi_verify.ucf(22)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_r&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_r&lt;0&gt;&quot; LOC = W20;&gt; [hdmi_verify.ucf(90)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = L17;&gt; [hdmi_verify.ucf(23)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;7&gt;&quot; LOC = L17;&gt; [hdmi_verify.ucf(95)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = T20;&gt; [hdmi_verify.ucf(24)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;6&gt;&quot; LOC = T20;&gt; [hdmi_verify.ucf(93)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB19;&gt; [hdmi_verify.ucf(25)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;5&gt;&quot; LOC = AB19;&gt; [hdmi_verify.ucf(91)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = T19;&gt; [hdmi_verify.ucf(26)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;4&gt;&quot; LOC = T19;&gt; [hdmi_verify.ucf(89)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y19;&gt; [hdmi_verify.ucf(27)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;3&gt;&quot; LOC = Y19;&gt; [hdmi_verify.ucf(88)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W13;&gt; [hdmi_verify.ucf(28)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;2&gt;&quot; LOC = W13;&gt; [hdmi_verify.ucf(87)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AA14;&gt; [hdmi_verify.ucf(29)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;1&gt;&quot; LOC = AA14;&gt; [hdmi_verify.ucf(86)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y17;&gt; [hdmi_verify.ucf(30)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_g&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_g&lt;0&gt;&quot; LOC = Y17;&gt; [hdmi_verify.ucf(85)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB14;&gt; [hdmi_verify.ucf(31)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;7&gt;&quot; LOC = AB14;&gt; [hdmi_verify.ucf(84)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB17;&gt; [hdmi_verify.ucf(32)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;6&gt;&quot; LOC = AB17;&gt; [hdmi_verify.ucf(134)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AA18;&gt; [hdmi_verify.ucf(33)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;5&gt;&quot; LOC = AA18;&gt; [hdmi_verify.ucf(131)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB18;&gt; [hdmi_verify.ucf(34)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;4&gt;&quot; LOC = AB18;&gt; [hdmi_verify.ucf(128)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = U14;&gt; [hdmi_verify.ucf(35)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;3&gt;&quot; LOC = U14;&gt; [hdmi_verify.ucf(125)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W18;&gt; [hdmi_verify.ucf(36)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;2&gt;&quot; LOC = W18;&gt; [hdmi_verify.ucf(121)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = U13;&gt; [hdmi_verify.ucf(37)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;1&gt;&quot; LOC = U13;&gt; [hdmi_verify.ucf(118)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y18;&gt; [hdmi_verify.ucf(38)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_out_rgb_b&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_out_rgb_b&lt;0&gt;&quot; LOC = Y18;&gt; [hdmi_verify.ucf(115)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB16;&gt; [hdmi_verify.ucf(44)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;7&gt;&quot; LOC = AB16;&gt; [hdmi_verify.ucf(83)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y16;&gt; [hdmi_verify.ucf(45)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;6&gt;&quot; LOC = Y16;&gt; [hdmi_verify.ucf(133)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y14;&gt; [hdmi_verify.ucf(46)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;5&gt;&quot; LOC = Y14;&gt; [hdmi_verify.ucf(130)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W15;&gt; [hdmi_verify.ucf(47)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;4&gt;&quot; LOC = W15;&gt; [hdmi_verify.ucf(127)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = V13;&gt; [hdmi_verify.ucf(48)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;3&gt;&quot; LOC = V13;&gt; [hdmi_verify.ucf(124)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W14;&gt; [hdmi_verify.ucf(49)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;2&gt;&quot; LOC = W14;&gt; [hdmi_verify.ucf(120)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = T11;&gt; [hdmi_verify.ucf(50)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;1&gt;&quot; LOC = T11;&gt; [hdmi_verify.ucf(117)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AA16;&gt; [hdmi_verify.ucf(51)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_R&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_R&lt;0&gt;&quot; LOC = AA16;&gt; [hdmi_verify.ucf(114)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = R11;&gt; [hdmi_verify.ucf(52)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;7&gt;&quot; LOC = R11;&gt; [hdmi_verify.ucf(122)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB15;&gt; [hdmi_verify.ucf(53)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;6&gt;&quot; LOC = AB15;&gt; [hdmi_verify.ucf(119)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W12;&gt; [hdmi_verify.ucf(54)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;5&gt;&quot; LOC = W12;&gt; [hdmi_verify.ucf(116)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y15;&gt; [hdmi_verify.ucf(55)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;4&gt;&quot; LOC = Y15;&gt; [hdmi_verify.ucf(113)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB10;&gt; [hdmi_verify.ucf(56)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;3&gt;&quot; LOC = AB10;&gt; [hdmi_verify.ucf(112)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB12;&gt; [hdmi_verify.ucf(57)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;2&gt;&quot; LOC = AB12;&gt; [hdmi_verify.ucf(111)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AA10;&gt; [hdmi_verify.ucf(58)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;1&gt;&quot; LOC = AA10;&gt; [hdmi_verify.ucf(110)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W11;&gt; [hdmi_verify.ucf(59)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_G&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_G&lt;0&gt;&quot; LOC = W11;&gt; [hdmi_verify.ucf(109)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = AB9;&gt; [hdmi_verify.ucf(60)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;7&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;7&gt;&quot; LOC = AB9;&gt; [hdmi_verify.ucf(108)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = V11;&gt; [hdmi_verify.ucf(61)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;6&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;6&gt;&quot; LOC = V11;&gt; [hdmi_verify.ucf(107)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = R9;&gt; [hdmi_verify.ucf(62)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;5&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;5&gt;&quot; LOC = R9;&gt; [hdmi_verify.ucf(106)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y9;&gt; [hdmi_verify.ucf(63)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;4&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;4&gt;&quot; LOC = Y9;&gt; [hdmi_verify.ucf(105)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = R8;&gt; [hdmi_verify.ucf(64)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;3&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;3&gt;&quot; LOC = R8;&gt; [hdmi_verify.ucf(104)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = Y10;&gt; [hdmi_verify.ucf(65)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;2&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;2&gt;&quot; LOC = Y10;&gt; [hdmi_verify.ucf(103)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W9;&gt; [hdmi_verify.ucf(66)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;1&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;1&gt;&quot; LOC = W9;&gt; [hdmi_verify.ucf(102)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;LOC = W10;&gt; [hdmi_verify.ucf(67)]</arg> is overridden on the design object <arg fmt="%s" index="2">hdmi_in_B&lt;0&gt;</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;hdmi_in_B&lt;0&gt;&quot; LOC = W10;&gt; [hdmi_verify.ucf(101)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="old" >User specified non-default attribute value (<arg fmt="%s" index="1">37.037000</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">pll_video_m0/dcm_sp_inst</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">27000 KHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+</messages>
+

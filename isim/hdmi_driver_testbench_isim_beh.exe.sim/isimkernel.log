@@ -1,0 +1,10 @@
+Command line:
+   hdmi_driver_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52012
+
+Mon Apr 03 14:14:06 2017
+
+
+ Elaboration Time: 0.125 sec

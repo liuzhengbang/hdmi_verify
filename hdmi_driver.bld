@@ -1,0 +1,1061 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Program\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc hdmi_verify.ucf -p
+xc6slx45-fgg484-2 hdmi_driver.ngc hdmi_driver.ngd
+
+Reading NGO file "C:/Users/liuzh_000/Documents/GE/B
+Project/hdmi_verify/hdmi_driver.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "hdmi_verify.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_27m" IOSTANDARD = "LVCMOS33" |>
+   [hdmi_verify.ucf(2)]: NET "clk_27m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = B10;> [hdmi_verify.ucf(2)]: NET
+   "clk_27m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = B10;> [hdmi_verify.ucf(2)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_27m" TNM_NET = "CLOCK_IN_27M";>
+   [hdmi_verify.ucf(3)]: NET "clk_27m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CLOCK_IN_27M = PERIOD
+   "CLOCK_IN_27M" 27000 kHz;> [hdmi_verify.ucf(4)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'CLOCK_IN_27M'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_50m" IOSTANDARD = "LVCMOS33" |>
+   [hdmi_verify.ucf(6)]: NET "clk_50m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB13;> [hdmi_verify.ucf(6)]: NET
+   "clk_50m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB13;> [hdmi_verify.ucf(6)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "clk_50m" TNM_NET = "CLOCK_IN_50M";>
+   [hdmi_verify.ucf(7)]: NET "clk_50m" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_CLOCK_IN_50M = PERIOD
+   "CLOCK_IN_50M" 50000 kHz;> [hdmi_verify.ucf(8)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'CLOCK_IN_50M'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[0]" LOC = U6 |>
+   [hdmi_verify.ucf(11)]: NET "led[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[0]" LOC = U6 |> [hdmi_verify.ucf(11)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(11)]: NET "led[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[1]" LOC = V5 |>
+   [hdmi_verify.ucf(12)]: NET "led[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[1]" LOC = V5 |> [hdmi_verify.ucf(12)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(12)]: NET "led[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[2]" LOC = AA2 |>
+   [hdmi_verify.ucf(13)]: NET "led[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[2]" LOC = AA2 |> [hdmi_verify.ucf(13)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(13)]: NET "led[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led[3]" LOC = AB2 |>
+   [hdmi_verify.ucf(14)]: NET "led[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led[3]" LOC = AB2 |> [hdmi_verify.ucf(14)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(14)]: NET "led[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(15)]: NET "hdmi_out_rgb_r[7]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = V21;> [hdmi_verify.ucf(15)]: NET
+   "hdmi_out_rgb_r[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V21;> [hdmi_verify.ucf(15)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(16)]: NET "hdmi_out_rgb_r[6]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = N19;> [hdmi_verify.ucf(16)]: NET
+   "hdmi_out_rgb_r[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = N19;> [hdmi_verify.ucf(16)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(17)]: NET "hdmi_out_rgb_r[5]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = P20;> [hdmi_verify.ucf(17)]: NET
+   "hdmi_out_rgb_r[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = P20;> [hdmi_verify.ucf(17)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(18)]: NET "hdmi_out_rgb_r[4]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = M19;> [hdmi_verify.ucf(18)]: NET
+   "hdmi_out_rgb_r[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = M19;> [hdmi_verify.ucf(18)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(19)]: NET "hdmi_out_rgb_r[3]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = P19;> [hdmi_verify.ucf(19)]: NET
+   "hdmi_out_rgb_r[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = P19;> [hdmi_verify.ucf(19)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(20)]: NET "hdmi_out_rgb_r[2]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W22;> [hdmi_verify.ucf(20)]: NET
+   "hdmi_out_rgb_r[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W22;> [hdmi_verify.ucf(20)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(21)]: NET "hdmi_out_rgb_r[1]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = K18;> [hdmi_verify.ucf(21)]: NET
+   "hdmi_out_rgb_r[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = K18;> [hdmi_verify.ucf(21)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_r[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(22)]: NET "hdmi_out_rgb_r[0]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W20;> [hdmi_verify.ucf(22)]: NET
+   "hdmi_out_rgb_r[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W20;> [hdmi_verify.ucf(22)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(23)]: NET "hdmi_out_rgb_g[7]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = L17;> [hdmi_verify.ucf(23)]: NET
+   "hdmi_out_rgb_g[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = L17;> [hdmi_verify.ucf(23)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(24)]: NET "hdmi_out_rgb_g[6]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = T20;> [hdmi_verify.ucf(24)]: NET
+   "hdmi_out_rgb_g[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T20;> [hdmi_verify.ucf(24)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(25)]: NET "hdmi_out_rgb_g[5]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB19;> [hdmi_verify.ucf(25)]: NET
+   "hdmi_out_rgb_g[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB19;> [hdmi_verify.ucf(25)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(26)]: NET "hdmi_out_rgb_g[4]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = T19;> [hdmi_verify.ucf(26)]: NET
+   "hdmi_out_rgb_g[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T19;> [hdmi_verify.ucf(26)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(27)]: NET "hdmi_out_rgb_g[3]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y19;> [hdmi_verify.ucf(27)]: NET
+   "hdmi_out_rgb_g[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y19;> [hdmi_verify.ucf(27)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(28)]: NET "hdmi_out_rgb_g[2]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W13;> [hdmi_verify.ucf(28)]: NET
+   "hdmi_out_rgb_g[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W13;> [hdmi_verify.ucf(28)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(29)]: NET "hdmi_out_rgb_g[1]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AA14;> [hdmi_verify.ucf(29)]: NET
+   "hdmi_out_rgb_g[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA14;> [hdmi_verify.ucf(29)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_g[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(30)]: NET "hdmi_out_rgb_g[0]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y17;> [hdmi_verify.ucf(30)]: NET
+   "hdmi_out_rgb_g[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y17;> [hdmi_verify.ucf(30)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(31)]: NET "hdmi_out_rgb_b[7]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB14;> [hdmi_verify.ucf(31)]: NET
+   "hdmi_out_rgb_b[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB14;> [hdmi_verify.ucf(31)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(32)]: NET "hdmi_out_rgb_b[6]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB17;> [hdmi_verify.ucf(32)]: NET
+   "hdmi_out_rgb_b[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB17;> [hdmi_verify.ucf(32)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(33)]: NET "hdmi_out_rgb_b[5]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AA18;> [hdmi_verify.ucf(33)]: NET
+   "hdmi_out_rgb_b[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA18;> [hdmi_verify.ucf(33)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(34)]: NET "hdmi_out_rgb_b[4]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB18;> [hdmi_verify.ucf(34)]: NET
+   "hdmi_out_rgb_b[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB18;> [hdmi_verify.ucf(34)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(35)]: NET "hdmi_out_rgb_b[3]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = U14;> [hdmi_verify.ucf(35)]: NET
+   "hdmi_out_rgb_b[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U14;> [hdmi_verify.ucf(35)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(36)]: NET "hdmi_out_rgb_b[2]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W18;> [hdmi_verify.ucf(36)]: NET
+   "hdmi_out_rgb_b[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W18;> [hdmi_verify.ucf(36)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(37)]: NET "hdmi_out_rgb_b[1]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = U13;> [hdmi_verify.ucf(37)]: NET
+   "hdmi_out_rgb_b[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U13;> [hdmi_verify.ucf(37)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_rgb_b[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(38)]: NET "hdmi_out_rgb_b[0]" not found. 
+   Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y18;> [hdmi_verify.ucf(38)]: NET
+   "hdmi_out_rgb_b[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y18;> [hdmi_verify.ucf(38)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_clk" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(39)]: NET "hdmi_out_clk" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y12;> [hdmi_verify.ucf(39)]: NET
+   "hdmi_out_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y12;> [hdmi_verify.ucf(39)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_de" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(40)]: NET "hdmi_out_de" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = V22;> [hdmi_verify.ucf(40)]: NET
+   "hdmi_out_de" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V22;> [hdmi_verify.ucf(40)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_hs" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(41)]: NET "hdmi_out_hs" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = U22;> [hdmi_verify.ucf(41)]: NET
+   "hdmi_out_hs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U22;> [hdmi_verify.ucf(41)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_out_vs" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(42)]: NET "hdmi_out_vs" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = U20;> [hdmi_verify.ucf(42)]: NET
+   "hdmi_out_vs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = U20;> [hdmi_verify.ucf(42)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(44)]: NET "hdmi_in_R[7]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB16;> [hdmi_verify.ucf(44)]: NET
+   "hdmi_in_R[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB16;> [hdmi_verify.ucf(44)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(45)]: NET "hdmi_in_R[6]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y16;> [hdmi_verify.ucf(45)]: NET
+   "hdmi_in_R[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y16;> [hdmi_verify.ucf(45)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(46)]: NET "hdmi_in_R[5]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y14;> [hdmi_verify.ucf(46)]: NET
+   "hdmi_in_R[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y14;> [hdmi_verify.ucf(46)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(47)]: NET "hdmi_in_R[4]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W15;> [hdmi_verify.ucf(47)]: NET
+   "hdmi_in_R[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W15;> [hdmi_verify.ucf(47)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(48)]: NET "hdmi_in_R[3]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = V13;> [hdmi_verify.ucf(48)]: NET
+   "hdmi_in_R[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V13;> [hdmi_verify.ucf(48)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(49)]: NET "hdmi_in_R[2]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W14;> [hdmi_verify.ucf(49)]: NET
+   "hdmi_in_R[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W14;> [hdmi_verify.ucf(49)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(50)]: NET "hdmi_in_R[1]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = T11;> [hdmi_verify.ucf(50)]: NET
+   "hdmi_in_R[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = T11;> [hdmi_verify.ucf(50)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_R[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(51)]: NET "hdmi_in_R[0]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AA16;> [hdmi_verify.ucf(51)]: NET
+   "hdmi_in_R[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA16;> [hdmi_verify.ucf(51)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(52)]: NET "hdmi_in_G[7]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = R11;> [hdmi_verify.ucf(52)]: NET
+   "hdmi_in_G[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R11;> [hdmi_verify.ucf(52)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(53)]: NET "hdmi_in_G[6]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB15;> [hdmi_verify.ucf(53)]: NET
+   "hdmi_in_G[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB15;> [hdmi_verify.ucf(53)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(54)]: NET "hdmi_in_G[5]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W12;> [hdmi_verify.ucf(54)]: NET
+   "hdmi_in_G[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W12;> [hdmi_verify.ucf(54)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(55)]: NET "hdmi_in_G[4]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y15;> [hdmi_verify.ucf(55)]: NET
+   "hdmi_in_G[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y15;> [hdmi_verify.ucf(55)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(56)]: NET "hdmi_in_G[3]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB10;> [hdmi_verify.ucf(56)]: NET
+   "hdmi_in_G[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB10;> [hdmi_verify.ucf(56)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(57)]: NET "hdmi_in_G[2]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB12;> [hdmi_verify.ucf(57)]: NET
+   "hdmi_in_G[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB12;> [hdmi_verify.ucf(57)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(58)]: NET "hdmi_in_G[1]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AA10;> [hdmi_verify.ucf(58)]: NET
+   "hdmi_in_G[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA10;> [hdmi_verify.ucf(58)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_G[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(59)]: NET "hdmi_in_G[0]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W11;> [hdmi_verify.ucf(59)]: NET
+   "hdmi_in_G[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W11;> [hdmi_verify.ucf(59)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[7]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(60)]: NET "hdmi_in_B[7]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AB9;> [hdmi_verify.ucf(60)]: NET
+   "hdmi_in_B[7]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AB9;> [hdmi_verify.ucf(60)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[6]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(61)]: NET "hdmi_in_B[6]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = V11;> [hdmi_verify.ucf(61)]: NET
+   "hdmi_in_B[6]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V11;> [hdmi_verify.ucf(61)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[5]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(62)]: NET "hdmi_in_B[5]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = R9;> [hdmi_verify.ucf(62)]: NET
+   "hdmi_in_B[5]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R9;> [hdmi_verify.ucf(62)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[4]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(63)]: NET "hdmi_in_B[4]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y9;> [hdmi_verify.ucf(63)]: NET
+   "hdmi_in_B[4]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y9;> [hdmi_verify.ucf(63)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[3]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(64)]: NET "hdmi_in_B[3]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = R8;> [hdmi_verify.ucf(64)]: NET
+   "hdmi_in_B[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = R8;> [hdmi_verify.ucf(64)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[2]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(65)]: NET "hdmi_in_B[2]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y10;> [hdmi_verify.ucf(65)]: NET
+   "hdmi_in_B[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y10;> [hdmi_verify.ucf(65)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[1]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(66)]: NET "hdmi_in_B[1]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W9;> [hdmi_verify.ucf(66)]: NET
+   "hdmi_in_B[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W9;> [hdmi_verify.ucf(66)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_B[0]" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(67)]: NET "hdmi_in_B[0]" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W10;> [hdmi_verify.ucf(67)]: NET
+   "hdmi_in_B[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W10;> [hdmi_verify.ucf(67)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_active" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(68)]: NET "hdmi_in_active" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = V7;> [hdmi_verify.ucf(68)]: NET
+   "hdmi_in_active" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = V7;> [hdmi_verify.ucf(68)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_hs" IOSTANDARD = "LVCMOS33"
+   |> [hdmi_verify.ucf(69)]: NET "hdmi_in_hs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = Y8;> [hdmi_verify.ucf(69)]: NET
+   "hdmi_in_hs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = Y8;> [hdmi_verify.ucf(69)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_vs" IOSTANDARD = "LVCMOS33"
+   |> [hdmi_verify.ucf(70)]: NET "hdmi_in_vs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = W8;> [hdmi_verify.ucf(70)]: NET
+   "hdmi_in_vs" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = W8;> [hdmi_verify.ucf(70)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_clk" IOSTANDARD =
+   "LVCMOS33" |> [hdmi_verify.ucf(71)]: NET "hdmi_in_clk" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <LOC = AA12;> [hdmi_verify.ucf(71)]: NET
+   "hdmi_in_clk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<LOC = AA12;> [hdmi_verify.ucf(71)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hdmi_in_clk" TNM_NET =
+   "HDMI_IN_CLOCK";> [hdmi_verify.ucf(72)]: NET "hdmi_in_clk" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC "TS_HDMI_IN_CLOCK" = PERIOD
+   "HDMI_IN_CLOCK"  148500 kHz;> [hdmi_verify.ucf(73)]: Unable to find an active
+   'TNM' or 'TimeGrp' constraint named 'HDMI_IN_CLOCK'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "tx" LOC = C7 |>
+   [hdmi_verify.ucf(75)]: NET "tx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "tx" LOC = C7 |> [hdmi_verify.ucf(75)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(75)]: NET "tx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "rx" LOC = A7 |>
+   [hdmi_verify.ucf(76)]: NET "rx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "rx" LOC = A7 |> [hdmi_verify.ucf(76)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [hdmi_verify.ucf(76)]: NET "rx" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:191 - The TNM 'CLOCK_IN_27M', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_CLOCK_IN_27M'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_CLOCK_IN_27M = PERIOD "CLOCK_IN_27M" 27000 kHz;>
+   [hdmi_verify.ucf(4)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_CLOCK_IN_27M = PERIOD "CLOCK_IN_27M" 27000 kHz;>
+   [hdmi_verify.ucf(4)]
+
+WARNING:ConstraintSystem:191 - The TNM 'CLOCK_IN_50M', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_CLOCK_IN_50M'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_CLOCK_IN_50M = PERIOD "CLOCK_IN_50M" 50000 kHz;>
+   [hdmi_verify.ucf(8)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_CLOCK_IN_50M = PERIOD "CLOCK_IN_50M" 50000 kHz;>
+   [hdmi_verify.ucf(8)]
+
+WARNING:ConstraintSystem:191 - The TNM 'HDMI_IN_CLOCK', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_HDMI_IN_CLOCK'. If clock
+   manager blocks are directly or indirectly driven, a new TNM constraint will
+   not be derived even though the referencing constraint is a PERIOD constraint
+   unless an output of the clock manager drives flip-flops, latches or RAMs.
+   This TNM is used in the following user PERIOD specification:
+   <TIMESPEC "TS_HDMI_IN_CLOCK" = PERIOD "HDMI_IN_CLOCK"  148500 kHz;>
+   [hdmi_verify.ucf(73)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC "TS_HDMI_IN_CLOCK" = PERIOD "HDMI_IN_CLOCK"  148500 kHz;>
+   [hdmi_verify.ucf(73)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:   131
+  Number of warnings:  73
+
+Total memory usage is 155108 kilobytes
+
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "hdmi_driver.bld"...

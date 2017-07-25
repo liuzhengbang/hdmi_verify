@@ -1,0 +1,959 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Program\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3
+-s 2 -n 3 -fastpaths -xml hdmi_verify.twx hdmi_verify.ncd -o hdmi_verify.twr
+hdmi_verify.pcf -ucf hdmi_verify.ucf
+
+Design file:              hdmi_verify.ncd
+Physical constraint file: hdmi_verify.pcf
+Device,package,speed:     xc6slx45,fgg484,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_CLOCK_IN_27M = PERIOD TIMEGRP "CLOCK_IN_27M" 27 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is  16.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLOCK_IN_27M = PERIOD TIMEGRP "CLOCK_IN_27M" 27 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.734ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 3.000ns (333.333MHz) (Tdcmper_CLKFX)
+  Physical resource: pll_video_m0/dcm_sp_inst/CLKFX
+  Logical resource: pll_video_m0/dcm_sp_inst/CLKFX
+  Location pin: DCM_X0Y6.CLKFX
+  Clock network: pll_video_m0/clkfx
+--------------------------------------------------------------------------------
+Slack: 21.037ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 37.037ns
+  Low pulse: 18.518ns
+  Low pulse limit: 8.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: pll_video_m0/dcm_sp_inst/CLKIN
+  Logical resource: pll_video_m0/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y6.CLKIN
+  Clock network: pll_video_m0/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+Slack: 21.037ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 37.037ns
+  High pulse: 18.518ns
+  High pulse limit: 8.000ns (Tdcmpw_CLKIN_25_50)
+  Physical resource: pll_video_m0/dcm_sp_inst/CLKIN
+  Logical resource: pll_video_m0/dcm_sp_inst/CLKIN
+  Location pin: DCM_X0Y6.CLKIN
+  Clock network: pll_video_m0/dcm_sp_inst_ML_NEW_DIVCLK
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_HDMI_IN_CLOCK = PERIOD TIMEGRP "HDMI_IN_CLOCK" 148.5 MHz 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 13966 paths analyzed, 8428 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.089ns.
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA (SLICE_X56Y21.CE), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.645ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.986ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.068ns (0.587 - 0.655)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y12.AQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A1      net (fanout=18)       1.561   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    -------------------------------------------------  ---------------------------
+    Total                                      5.986ns (1.058ns logic, 4.928ns route)
+                                                       (17.7% logic, 82.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.134ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.512ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.053ns (0.587 - 0.640)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y25.BQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A3      net (fanout=11)       1.087   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    -------------------------------------------------  ---------------------------
+    Total                                      5.512ns (1.058ns logic, 4.454ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.140ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.497ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.062ns (0.587 - 0.649)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y18.AQ      Tcko                  0.476   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<9>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6
+    SLICE_X27Y18.A2      net (fanout=12)       1.026   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<6>
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMA
+    -------------------------------------------------  ---------------------------
+    Total                                      5.497ns (1.104ns logic, 4.393ns route)
+                                                       (20.1% logic, 79.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB (SLICE_X56Y21.CE), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.645ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.986ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.068ns (0.587 - 0.655)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y12.AQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A1      net (fanout=18)       1.561   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    -------------------------------------------------  ---------------------------
+    Total                                      5.986ns (1.058ns logic, 4.928ns route)
+                                                       (17.7% logic, 82.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.134ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.512ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.053ns (0.587 - 0.640)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y25.BQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A3      net (fanout=11)       1.087   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    -------------------------------------------------  ---------------------------
+    Total                                      5.512ns (1.058ns logic, 4.454ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.140ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.497ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.062ns (0.587 - 0.649)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y18.AQ      Tcko                  0.476   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<9>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6
+    SLICE_X27Y18.A2      net (fanout=12)       1.026   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<6>
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMB
+    -------------------------------------------------  ---------------------------
+    Total                                      5.497ns (1.104ns logic, 4.393ns route)
+                                                       (20.1% logic, 79.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC (SLICE_X56Y21.CE), 6 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.645ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.986ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.068ns (0.587 - 0.655)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X31Y12.AQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A1      net (fanout=18)       1.561   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    -------------------------------------------------  ---------------------------
+    Total                                      5.986ns (1.058ns logic, 4.928ns route)
+                                                       (17.7% logic, 82.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.134ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.512ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.053ns (0.587 - 0.640)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y25.BQ      Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A3      net (fanout=11)       1.087   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_8_2
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    -------------------------------------------------  ---------------------------
+    Total                                      5.512ns (1.058ns logic, 4.454ns route)
+                                                       (19.2% logic, 80.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.140ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC (RAM)
+  Requirement:          6.734ns
+  Data Path Delay:      5.497ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.062ns (0.587 - 0.649)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 0.000ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X28Y18.AQ      Tcko                  0.476   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<9>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_6
+    SLICE_X27Y18.A2      net (fanout=12)       1.026   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<6>
+    SLICE_X27Y18.A       Tilo                  0.259   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_9_1
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl8_1
+    SLICE_X56Y21.CE      net (fanout=11)       3.367   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/write_ctrl81
+    SLICE_X56Y21.CLK     Tceck                 0.369   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM345_RAMC
+    -------------------------------------------------  ---------------------------
+    Total                                      5.497ns (1.104ns logic, 4.393ns route)
+                                                       (20.1% logic, 79.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_HDMI_IN_CLOCK = PERIOD TIMEGRP "HDMI_IN_CLOCK" 148.5 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMA (SLICE_X26Y5.D4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.337ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMA (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.341ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.072 - 0.068)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 6.734ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMA
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y5.BQ       Tcko                  0.198   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<5>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3
+    SLICE_X26Y5.D4       net (fanout=258)      0.271   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<3>
+    SLICE_X26Y5.CLK      Tah         (-Th)     0.128   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMA
+    -------------------------------------------------  ---------------------------
+    Total                                      0.341ns (0.070ns logic, 0.271ns route)
+                                                       (20.5% logic, 79.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMB (SLICE_X26Y5.D4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.337ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMB (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.341ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.072 - 0.068)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 6.734ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMB
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y5.BQ       Tcko                  0.198   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<5>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3
+    SLICE_X26Y5.D4       net (fanout=258)      0.271   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<3>
+    SLICE_X26Y5.CLK      Tah         (-Th)     0.128   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMB
+    -------------------------------------------------  ---------------------------
+    Total                                      0.341ns (0.070ns logic, 0.271ns route)
+                                                       (20.5% logic, 79.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMC (SLICE_X26Y5.D4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.337ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMC (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.341ns (Levels of Logic = 0)
+  Clock Path Skew:      0.004ns (0.072 - 0.068)
+  Source Clock:         hdmi_in_clk_BUFGP rising at 6.734ns
+  Destination Clock:    hdmi_in_clk_BUFGP rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMC
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y5.BQ       Tcko                  0.198   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<5>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3
+    SLICE_X26Y5.D4       net (fanout=258)      0.271   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<3>
+    SLICE_X26Y5.CLK      Tah         (-Th)     0.128   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMD_O
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM260_RAMC
+    -------------------------------------------------  ---------------------------
+    Total                                      0.341ns (0.070ns logic, 0.271ns route)
+                                                       (20.5% logic, 79.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_HDMI_IN_CLOCK = PERIOD TIMEGRP "HDMI_IN_CLOCK" 148.5 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 4.068ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 2.666ns (375.094MHz) (Tbcper_I)
+  Physical resource: hdmi_in_clk_BUFGP/BUFG/I0
+  Logical resource: hdmi_in_clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X2Y12.I0
+  Clock network: hdmi_in_clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 5.335ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: hdmi_in_reader/hdmi_in/hdmi_in_vs_d1/CLK
+  Logical resource: hdmi_in_reader/hdmi_in/Mshreg_hdmi_in_active_d1/CLK
+  Location pin: SLICE_X14Y2.CLK
+  Clock network: hdmi_in_clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 5.335ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 1.399ns (714.796MHz) (Tcp)
+  Physical resource: hdmi_in_reader/hdmi_in/hdmi_in_vs_d1/CLK
+  Logical resource: hdmi_in_reader/hdmi_in/Mshreg_hdmi_in_hs_d1/CLK
+  Location pin: SLICE_X14Y2.CLK
+  Clock network: hdmi_in_clk_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_pll_video_m0_clkfx = PERIOD TIMEGRP "pll_video_m0_clkfx" 
+TS_CLOCK_IN_27M *         5.5 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 49880 paths analyzed, 5708 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   6.417ns.
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/data_to_uart_60 (SLICE_X31Y40.CE), 153 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.317ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/red_d0_7 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_60 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.147ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.067ns (0.581 - 0.648)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/red_d0_7 to hdmi_in_reader/data_to_uart_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y32.DQ      Tcko                  0.430   hdmi_in_reader/red_d0_7
+                                                       hdmi_in_reader/red_d0_7
+    SLICE_X20Y33.A3      net (fanout=4)        1.336   hdmi_in_reader/red_d0_7
+    SLICE_X20Y33.A       Tilo                  0.235   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o8
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o4
+    SLICE_X25Y33.D3      net (fanout=1)        0.658   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o4
+    SLICE_X25Y33.D       Tilo                  0.259   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+    SLICE_X25Y33.C6      net (fanout=1)        0.143   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+    SLICE_X25Y33.C       Tilo                  0.259   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o10
+    SLICE_X31Y40.D5      net (fanout=4)        1.492   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.408   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_60
+    -------------------------------------------------  ---------------------------
+    Total                                      6.147ns (1.850ns logic, 4.297ns route)
+                                                       (30.1% logic, 69.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.374ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/h_active_value_d0_11 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_60 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.097ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.060ns (0.581 - 0.641)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/h_active_value_d0_11 to hdmi_in_reader/data_to_uart_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y42.DQ      Tcko                  0.430   hdmi_in_reader/h_active_value_d0<11>
+                                                       hdmi_in_reader/h_active_value_d0_11
+    SLICE_X25Y44.D6      net (fanout=3)        0.785   hdmi_in_reader/h_active_value_d0<11>
+    SLICE_X25Y44.D       Tilo                  0.259   hdmi_in_reader/v_active_value_d0<3>
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C3      net (fanout=6)        1.602   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C       Tilo                  0.235   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o15_2
+    SLICE_X31Y40.D1      net (fanout=2)        1.451   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.408   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_60
+    -------------------------------------------------  ---------------------------
+    Total                                      6.097ns (1.591ns logic, 4.506ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.407ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/h_active_value_d0_9 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_60 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.064ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.060ns (0.581 - 0.641)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/h_active_value_d0_9 to hdmi_in_reader/data_to_uart_60
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y42.BQ      Tcko                  0.430   hdmi_in_reader/h_active_value_d0<11>
+                                                       hdmi_in_reader/h_active_value_d0_9
+    SLICE_X25Y44.D2      net (fanout=3)        0.752   hdmi_in_reader/h_active_value_d0<9>
+    SLICE_X25Y44.D       Tilo                  0.259   hdmi_in_reader/v_active_value_d0<3>
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C3      net (fanout=6)        1.602   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C       Tilo                  0.235   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o15_2
+    SLICE_X31Y40.D1      net (fanout=2)        1.451   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.408   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_60
+    -------------------------------------------------  ---------------------------
+    Total                                      6.064ns (1.591ns logic, 4.473ns route)
+                                                       (26.2% logic, 73.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_57 (SLICE_X46Y16.D2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.319ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2 (FF)
+  Destination:          hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_57 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.130ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.082ns (0.594 - 0.676)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2 to hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_57
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X5Y15.BQ       Tcko                  0.430   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_4
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2
+    SLICE_X46Y16.D2      net (fanout=32)       5.240   hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_6_2
+    SLICE_X46Y16.CLK     Tas                   0.460   hdmi_in_reader/fifo_out<57>
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX57_6
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX57_4_f7
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/inst_LPM_MUX57_2_f8
+                                                       hdmi_in_reader/hdmi_in/hdmi_in_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/dout_i_57
+    -------------------------------------------------  ---------------------------
+    Total                                      6.130ns (0.890ns logic, 5.240ns route)
+                                                       (14.5% logic, 85.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/data_to_uart_56 (SLICE_X31Y40.CE), 153 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.320ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/red_d0_7 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_56 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.144ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.067ns (0.581 - 0.648)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/red_d0_7 to hdmi_in_reader/data_to_uart_56
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X21Y32.DQ      Tcko                  0.430   hdmi_in_reader/red_d0_7
+                                                       hdmi_in_reader/red_d0_7
+    SLICE_X20Y33.A3      net (fanout=4)        1.336   hdmi_in_reader/red_d0_7
+    SLICE_X20Y33.A       Tilo                  0.235   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o8
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o4
+    SLICE_X25Y33.D3      net (fanout=1)        0.658   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o4
+    SLICE_X25Y33.D       Tilo                  0.259   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+    SLICE_X25Y33.C6      net (fanout=1)        0.143   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+    SLICE_X25Y33.C       Tilo                  0.259   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o5
+                                                       hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o10
+    SLICE_X31Y40.D5      net (fanout=4)        1.492   hdmi_in_reader/generated_r_reg[7]_generated_b_reg[7]_AND_29_o
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.405   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_56
+    -------------------------------------------------  ---------------------------
+    Total                                      6.144ns (1.847ns logic, 4.297ns route)
+                                                       (30.1% logic, 69.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.377ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/h_active_value_d0_11 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_56 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.094ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.060ns (0.581 - 0.641)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/h_active_value_d0_11 to hdmi_in_reader/data_to_uart_56
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y42.DQ      Tcko                  0.430   hdmi_in_reader/h_active_value_d0<11>
+                                                       hdmi_in_reader/h_active_value_d0_11
+    SLICE_X25Y44.D6      net (fanout=3)        0.785   hdmi_in_reader/h_active_value_d0<11>
+    SLICE_X25Y44.D       Tilo                  0.259   hdmi_in_reader/v_active_value_d0<3>
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C3      net (fanout=6)        1.602   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C       Tilo                  0.235   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o15_2
+    SLICE_X31Y40.D1      net (fanout=2)        1.451   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.405   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_56
+    -------------------------------------------------  ---------------------------
+    Total                                      6.094ns (1.588ns logic, 4.506ns route)
+                                                       (26.1% logic, 73.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.410ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               hdmi_in_reader/h_active_value_d0_9 (FF)
+  Destination:          hdmi_in_reader/data_to_uart_56 (FF)
+  Requirement:          6.734ns
+  Data Path Delay:      6.061ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.060ns (0.581 - 0.641)
+  Source Clock:         video_clk rising at 0.000ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.203ns
+
+  Clock Uncertainty:          0.203ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.334ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: hdmi_in_reader/h_active_value_d0_9 to hdmi_in_reader/data_to_uart_56
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y42.BQ      Tcko                  0.430   hdmi_in_reader/h_active_value_d0<11>
+                                                       hdmi_in_reader/h_active_value_d0_9
+    SLICE_X25Y44.D2      net (fanout=3)        0.752   hdmi_in_reader/h_active_value_d0<9>
+    SLICE_X25Y44.D       Tilo                  0.259   hdmi_in_reader/v_active_value_d0<3>
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C3      net (fanout=6)        1.602   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o14
+    SLICE_X28Y45.C       Tilo                  0.235   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+                                                       hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o15_2
+    SLICE_X31Y40.D1      net (fanout=2)        1.451   hdmi_in_reader/h_active_value_d0[11]_v_active_value_d0[11]_AND_25_o151
+    SLICE_X31Y40.D       Tilo                  0.259   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/_n0384_inv3_1
+    SLICE_X31Y40.CE      net (fanout=16)       0.668   hdmi_in_reader/_n0384_inv31
+    SLICE_X31Y40.CLK     Tceck                 0.405   hdmi_in_reader/data_to_uart<60>
+                                                       hdmi_in_reader/data_to_uart_56
+    -------------------------------------------------  ---------------------------
+    Total                                      6.061ns (1.588ns logic, 4.473ns route)
+                                                       (26.2% logic, 73.8% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_pll_video_m0_clkfx = PERIOD TIMEGRP "pll_video_m0_clkfx" TS_CLOCK_IN_27M *
+        5.5 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAMB8_X2Y34.DIADI3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.272ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/pulse_tester/fifo_din_3 (FF)
+  Destination:          hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.272ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         video_clk rising at 6.734ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/pulse_tester/fifo_din_3 to hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X40Y67.CQ      Tcko                  0.200   hdmi_in_reader/pulse_tester/fifo_din<6>
+                                                       hdmi_in_reader/pulse_tester/fifo_din_3
+    RAMB8_X2Y34.DIADI3   net (fanout=1)        0.125   hdmi_in_reader/pulse_tester/fifo_din<3>
+    RAMB8_X2Y34.CLKAWRCLKTrckd_DIA   (-Th)     0.053   hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+                                                       hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.272ns (0.147ns logic, 0.125ns route)
+                                                       (54.0% logic, 46.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAMB8_X2Y34.DIADI7), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.340ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/pulse_tester/fifo_din_7 (FF)
+  Destination:          hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.340ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         video_clk rising at 6.734ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/pulse_tester/fifo_din_7 to hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X40Y67.DMUX    Tshcko                0.238   hdmi_in_reader/pulse_tester/fifo_din<6>
+                                                       hdmi_in_reader/pulse_tester/fifo_din_7
+    RAMB8_X2Y34.DIADI7   net (fanout=1)        0.155   hdmi_in_reader/pulse_tester/fifo_din<7>
+    RAMB8_X2Y34.CLKAWRCLKTrckd_DIA   (-Th)     0.053   hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+                                                       hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.340ns (0.185ns logic, 0.155ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAMB8_X2Y34.DIADI1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.369ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               hdmi_in_reader/pulse_tester/fifo_din_1 (FF)
+  Destination:          hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.369ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         video_clk rising at 6.734ns
+  Destination Clock:    video_clk rising at 6.734ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: hdmi_in_reader/pulse_tester/fifo_din_1 to hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X40Y67.BQ      Tcko                  0.200   hdmi_in_reader/pulse_tester/fifo_din<6>
+                                                       hdmi_in_reader/pulse_tester/fifo_din_1
+    RAMB8_X2Y34.DIADI1   net (fanout=1)        0.222   hdmi_in_reader/pulse_tester/fifo_din<1>
+    RAMB8_X2Y34.CLKAWRCLKTrckd_DIA   (-Th)     0.053   hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+                                                       hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram
+    -------------------------------------------------  ---------------------------
+    Total                                      0.369ns (0.147ns logic, 0.222ns route)
+                                                       (39.8% logic, 60.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_pll_video_m0_clkfx = PERIOD TIMEGRP "pll_video_m0_clkfx" TS_CLOCK_IN_27M *
+        5.5 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.164ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKAWRCLK
+  Logical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKAWRCLK
+  Location pin: RAMB8_X2Y34.CLKAWRCLK
+  Clock network: video_clk
+--------------------------------------------------------------------------------
+Slack: 3.164ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKB(Fmax))
+  Physical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Logical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram/CLKBRDCLK
+  Location pin: RAMB8_X2Y34.CLKBRDCLK
+  Clock network: video_clk
+--------------------------------------------------------------------------------
+Slack: 3.164ns (period - min period limit)
+  Period: 6.734ns
+  Min period limit: 3.570ns (280.112MHz) (Trper_CLKA(Fmax))
+  Physical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKA
+  Logical resource: hdmi_in_reader/pulse_tester/pulse_tester_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKA
+  Location pin: RAMB16_X2Y36.CLKA
+  Clock network: video_clk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_CLOCK_IN_27M
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_CLOCK_IN_27M                |     37.037ns|     16.000ns|     35.294ns|            0|            0|            0|        49880|
+| TS_pll_video_m0_clkfx         |      6.734ns|      6.417ns|          N/A|            0|            0|        49880|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_27m
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_27m        |    6.417|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock hdmi_in_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+hdmi_in_clk    |    6.089|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 63846 paths, 0 nets, and 15450 connections
+
+Design statistics:
+   Minimum period:  16.000ns{1}   (Maximum frequency:  62.500MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat May 13 22:13:45 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 244 MB
+
+
+

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Mar 20 23:19:55 2017
+# Process ID: 12448
+# Log file: C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/pa.fromNetlist.tcl}

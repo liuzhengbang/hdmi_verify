@@ -1,0 +1,134 @@
+
+NET "clk_27m" IOSTANDARD = "LVCMOS33" | LOC = B10;
+NET "clk_27m" TNM_NET = "CLOCK_IN_27M";
+TIMESPEC TS_CLOCK_IN_27M = PERIOD "CLOCK_IN_27M" 27000 kHz;
+
+NET "clk_50m" IOSTANDARD = "LVCMOS33" | LOC = AB13;
+NET "clk_50m" TNM_NET = "CLOCK_IN_50M";
+TIMESPEC TS_CLOCK_IN_50M = PERIOD "CLOCK_IN_50M" 50000 kHz;
+
+
+NET "led[0]" LOC = U6 | IOSTANDARD = "LVCMOS33";       ## LED1
+NET "led[1]" LOC = V5 | IOSTANDARD = "LVCMOS33";       ## LED2
+NET "led[2]" LOC = AA2 | IOSTANDARD = "LVCMOS33";       ## LED3
+NET "led[3]" LOC = AB2 | IOSTANDARD = "LVCMOS33";       ## LED4
+NET "hdmi_out_rgb_r[7]" IOSTANDARD = "LVCMOS33" | LOC = V21;
+NET "hdmi_out_rgb_r[6]" IOSTANDARD = "LVCMOS33" | LOC = N19;
+NET "hdmi_out_rgb_r[5]" IOSTANDARD = "LVCMOS33" | LOC = P20;
+NET "hdmi_out_rgb_r[4]" IOSTANDARD = "LVCMOS33" | LOC = M19;
+NET "hdmi_out_rgb_r[3]" IOSTANDARD = "LVCMOS33" | LOC = P19;
+NET "hdmi_out_rgb_r[2]" IOSTANDARD = "LVCMOS33" | LOC = W22;
+NET "hdmi_out_rgb_r[1]" IOSTANDARD = "LVCMOS33" | LOC = K18;
+NET "hdmi_out_rgb_r[0]" IOSTANDARD = "LVCMOS33" | LOC = W20;
+NET "hdmi_out_rgb_g[7]" IOSTANDARD = "LVCMOS33" | LOC = L17;
+NET "hdmi_out_rgb_g[6]" IOSTANDARD = "LVCMOS33" | LOC = T20;
+NET "hdmi_out_rgb_g[5]" IOSTANDARD = "LVCMOS33" | LOC = AB19;
+NET "hdmi_out_rgb_g[4]" IOSTANDARD = "LVCMOS33" | LOC = T19;
+NET "hdmi_out_rgb_g[3]" IOSTANDARD = "LVCMOS33" | LOC = Y19;
+NET "hdmi_out_rgb_g[2]" IOSTANDARD = "LVCMOS33" | LOC = W13;
+NET "hdmi_out_rgb_g[1]" IOSTANDARD = "LVCMOS33" | LOC = AA14;
+NET "hdmi_out_rgb_g[0]" IOSTANDARD = "LVCMOS33" | LOC = Y17;
+NET "hdmi_out_rgb_b[7]" IOSTANDARD = "LVCMOS33" | LOC = AB14;
+NET "hdmi_out_rgb_b[6]" IOSTANDARD = "LVCMOS33" | LOC = AB17;
+NET "hdmi_out_rgb_b[5]" IOSTANDARD = "LVCMOS33" | LOC = AA18;
+NET "hdmi_out_rgb_b[4]" IOSTANDARD = "LVCMOS33" | LOC = AB18;
+NET "hdmi_out_rgb_b[3]" IOSTANDARD = "LVCMOS33" | LOC = U14;
+NET "hdmi_out_rgb_b[2]" IOSTANDARD = "LVCMOS33" | LOC = W18;
+NET "hdmi_out_rgb_b[1]" IOSTANDARD = "LVCMOS33" | LOC = U13;
+NET "hdmi_out_rgb_b[0]" IOSTANDARD = "LVCMOS33" | LOC = Y18;
+NET "hdmi_out_clk" IOSTANDARD = "LVCMOS33" | LOC = Y12;
+NET "hdmi_out_de" IOSTANDARD = "LVCMOS33" | LOC = V22;
+NET "hdmi_out_hs" IOSTANDARD = "LVCMOS33" | LOC = U22;
+NET "hdmi_out_vs" IOSTANDARD = "LVCMOS33" | LOC = U20;
+
+NET "hdmi_in_R[7]" IOSTANDARD = "LVCMOS33" | LOC = AB16;
+NET "hdmi_in_R[6]" IOSTANDARD = "LVCMOS33" | LOC = Y16;
+NET "hdmi_in_R[5]" IOSTANDARD = "LVCMOS33" | LOC = Y14;
+NET "hdmi_in_R[4]" IOSTANDARD = "LVCMOS33" | LOC = W15;
+NET "hdmi_in_R[3]" IOSTANDARD = "LVCMOS33" | LOC = V13;
+NET "hdmi_in_R[2]" IOSTANDARD = "LVCMOS33" | LOC = W14;
+NET "hdmi_in_R[1]" IOSTANDARD = "LVCMOS33" | LOC = T11;
+NET "hdmi_in_R[0]" IOSTANDARD = "LVCMOS33" | LOC = AA16;
+NET "hdmi_in_G[7]" IOSTANDARD = "LVCMOS33" | LOC = R11;
+NET "hdmi_in_G[6]" IOSTANDARD = "LVCMOS33" | LOC = AB15;
+NET "hdmi_in_G[5]" IOSTANDARD = "LVCMOS33" | LOC = W12;
+NET "hdmi_in_G[4]" IOSTANDARD = "LVCMOS33" | LOC = Y15;
+NET "hdmi_in_G[3]" IOSTANDARD = "LVCMOS33" | LOC = AB10;
+NET "hdmi_in_G[2]" IOSTANDARD = "LVCMOS33" | LOC = AB12;
+NET "hdmi_in_G[1]" IOSTANDARD = "LVCMOS33" | LOC = AA10;
+NET "hdmi_in_G[0]" IOSTANDARD = "LVCMOS33" | LOC = W11;
+NET "hdmi_in_B[7]" IOSTANDARD = "LVCMOS33" | LOC = AB9;
+NET "hdmi_in_B[6]" IOSTANDARD = "LVCMOS33" | LOC = V11;
+NET "hdmi_in_B[5]" IOSTANDARD = "LVCMOS33" | LOC = R9;
+NET "hdmi_in_B[4]" IOSTANDARD = "LVCMOS33" | LOC = Y9;
+NET "hdmi_in_B[3]" IOSTANDARD = "LVCMOS33" | LOC = R8;
+NET "hdmi_in_B[2]" IOSTANDARD = "LVCMOS33" | LOC = Y10;
+NET "hdmi_in_B[1]" IOSTANDARD = "LVCMOS33" | LOC = W9;
+NET "hdmi_in_B[0]" IOSTANDARD = "LVCMOS33" | LOC = W10;
+NET "hdmi_in_active" IOSTANDARD = "LVCMOS33" | LOC = V7;
+NET "hdmi_in_hs" IOSTANDARD = "LVCMOS33" | LOC = Y8;
+NET "hdmi_in_vs" IOSTANDARD = "LVCMOS33" | LOC = W8;
+NET "hdmi_in_clk" IOSTANDARD = "LVCMOS33" | LOC = AA12;
+NET "hdmi_in_clk" TNM_NET = "HDMI_IN_CLOCK";
+TIMESPEC "TS_HDMI_IN_CLOCK" = PERIOD "HDMI_IN_CLOCK"  148500 kHz;
+
+NET "tx" LOC = C7 | IOSTANDARD = "LVCMOS33";
+NET "rx" LOC = A7 | IOSTANDARD = "LVCMOS33";
+
+
+NET "pulse_input" LOC = B8 | IOSTANDARD = "LVCMOS33";
+NET "pulse_ouput" LOC = A8 | IOSTANDARD = "LVCMOS33";
+#pin2ucf - Sun Apr 09 17:19:42 2017
+#The following constraints were newly added
+NET "hdmi_in_R<7>" LOC = AB16;
+NET "hdmi_out_rgb_b<7>" LOC = AB14;
+NET "hdmi_out_rgb_g<0>" LOC = Y17;
+NET "hdmi_out_rgb_g<1>" LOC = AA14;
+NET "hdmi_out_rgb_g<2>" LOC = W13;
+NET "hdmi_out_rgb_g<3>" LOC = Y19;
+NET "hdmi_out_rgb_g<4>" LOC = T19;
+NET "hdmi_out_rgb_r<0>" LOC = W20;
+NET "hdmi_out_rgb_g<5>" LOC = AB19;
+NET "hdmi_out_rgb_r<1>" LOC = K18;
+NET "hdmi_out_rgb_g<6>" LOC = T20;
+NET "hdmi_out_rgb_r<2>" LOC = W22;
+NET "hdmi_out_rgb_g<7>" LOC = L17;
+NET "hdmi_out_rgb_r<3>" LOC = P19;
+NET "hdmi_out_rgb_r<4>" LOC = M19;
+NET "hdmi_out_rgb_r<5>" LOC = P20;
+NET "hdmi_out_rgb_r<6>" LOC = N19;
+NET "hdmi_out_rgb_r<7>" LOC = V21;
+NET "hdmi_in_B<0>" LOC = W10;
+NET "hdmi_in_B<1>" LOC = W9;
+NET "hdmi_in_B<2>" LOC = Y10;
+NET "hdmi_in_B<3>" LOC = R8;
+NET "hdmi_in_B<4>" LOC = Y9;
+NET "hdmi_in_B<5>" LOC = R9;
+NET "hdmi_in_B<6>" LOC = V11;
+NET "hdmi_in_B<7>" LOC = AB9;
+NET "hdmi_in_G<0>" LOC = W11;
+NET "hdmi_in_G<1>" LOC = AA10;
+NET "hdmi_in_G<2>" LOC = AB12;
+NET "hdmi_in_G<3>" LOC = AB10;
+NET "hdmi_in_G<4>" LOC = Y15;
+NET "hdmi_in_R<0>" LOC = AA16;
+NET "hdmi_out_rgb_b<0>" LOC = Y18;
+NET "hdmi_in_G<5>" LOC = W12;
+NET "hdmi_in_R<1>" LOC = T11;
+NET "hdmi_out_rgb_b<1>" LOC = U13;
+NET "hdmi_in_G<6>" LOC = AB15;
+NET "hdmi_in_R<2>" LOC = W14;
+NET "hdmi_out_rgb_b<2>" LOC = W18;
+NET "hdmi_in_G<7>" LOC = R11;
+NET "led<0>" LOC = U6;
+NET "hdmi_in_R<3>" LOC = V13;
+NET "hdmi_out_rgb_b<3>" LOC = U14;
+NET "led<1>" LOC = V5;
+NET "hdmi_in_R<4>" LOC = W15;
+NET "hdmi_out_rgb_b<4>" LOC = AB18;
+NET "led<2>" LOC = AA2;
+NET "hdmi_in_R<5>" LOC = Y14;
+NET "hdmi_out_rgb_b<5>" LOC = AA18;
+NET "led<3>" LOC = AB2;
+NET "hdmi_in_R<6>" LOC = Y16;
+NET "hdmi_out_rgb_b<6>" LOC = AB17;

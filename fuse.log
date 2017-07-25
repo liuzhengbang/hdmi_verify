@@ -1,0 +1,20 @@
+Running: C:\Program\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb_isim_beh.exe -prj C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb_beh.prj work.random_generator_tb work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator.v" into library work
+Analyzing Verilog file "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb.v" into library work
+Analyzing Verilog file "C:/Program/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 161676 KB
+Fuse CPU Usage: 233 ms
+Compiling module random_generator
+Compiling module random_generator_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/random_generator_tb_isim_beh.exe
+Fuse Memory Usage: 168172 KB
+Fuse CPU Usage: 281 ms

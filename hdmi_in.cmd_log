@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj hdmi_verify -o "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify/hdmi_in.tfi" -lib work "C:/Users/liuzh_000/Documents/GE/B Project/hdmi_verify//hdmi_in.v" -module hdmi_in -template C:/Program/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
