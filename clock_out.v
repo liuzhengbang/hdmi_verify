@@ -1,0 +1,22 @@
+module clock_out
+(
+	input clk_in,
+	output clk_out
+);
+	ODDR2 #(
+		.DDR_ALIGNMENT("NONE"), // Sets output alignment to "NONE", "C0" or "C1" 
+		.INIT(1'b0),    // Sets initial state of the Q output to 1'b0 or 1'b1
+		.SRTYPE("ASYNC") // Specifies "SYNC" or "ASYNC" set/reset
+		) U_ODDR2
+	(
+		  .Q(clk_out),   // 1-bit DDR output data
+		  .C0(clk_in),   // 1-bit clock input
+		  .C1(~clk_in),   // 1-bit clock input
+		  .CE(1'b1), // 1-bit clock enable input
+		  .D0(1'b1), // 1-bit data input (associated with C0)
+		  .D1(1'b0), // 1-bit data input (associated with C1)
+		  .R(1'b0),   // 1-bit reset input
+		  .S(1'b0)    // 1-bit set input
+	);
+
+endmodule 
